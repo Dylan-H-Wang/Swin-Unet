@@ -1,52 +1,32 @@
 #!/bin/bash
-if [$epoch_time]
-then
-    EPOCH_TIME = $epoch_time
-else
-    EPOCH_TIME = 150
-fi
 
-if [$out_dir]
-then
-    OUT_DIR = $out_dir
-else
-    OUT_DIR  = './model_out'
-fi
+EPOCH_TIME=150
+CFG='configs/swin_tiny_patch4_window7_224_lite.yaml'
+DATA_DIR='./data/bcss/L0_1024_s512'
+LEARNING_RATE=0.05
+IMG_SIZE=224
+BATCH_SIZE=24
 
-if [$cfg]
-then
-    CFG = $cfg
-else
-    CFG = 'configs/swin_tiny_patch4_window7_224_lite.yaml'
-fi
+OUT_DIR='./logs/temp'
+python train.py --dataset bcss --cfg $CFG \
+    --root_path $DATA_DIR --max_epochs $EPOCH_TIME \
+    --output_dir $OUT_DIR --img_size $IMG_SIZE \
+    --base_lr $LEARNING_RATE --batch_size $BATCH_SIZE
 
-if [$data_dir]
-then
-    DATA_DIR = $data_dir
-else
-    DATA_DIR = 'datasets/Synapse'
-fi
+# OUT_DIR='./logs/frac'
+# python train.py --dataset bcss --cfg $CFG \
+#     --root_path $DATA_DIR --max_epochs $EPOCH_TIME \
+#     --output_dir $OUT_DIR --img_size $IMG_SIZE \
+#     --base_lr $LEARNING_RATE --batch_size $BATCH_SIZE --frac 0.5
 
-if [$learning_rate]
-then
-    LEARNING_RATE = $learning_rate
-else
-    LEARNING_RATE = 0.05
-fi
+# OUT_DIR='./logs/frac_1'
+# python train.py --dataset bcss --cfg $CFG \
+#     --root_path $DATA_DIR --max_epochs $EPOCH_TIME \
+#     --output_dir $OUT_DIR --img_size $IMG_SIZE \
+#     --base_lr $LEARNING_RATE --batch_size $BATCH_SIZE --frac 0.1
 
-if [$img_size]
-then
-    IMG_SIZE = $img_size
-else
-    IMG_SIZE = 224
-fi
-
-if [$batch_size]
-then
-    BATCH_SIZE = $batch_size
-else
-    BATCH_SIZE = 24
-fi
-
-echo "start train model"
-pyhton train.py --dataset Synapse --cfg $CFG --root_path $DATA_DIR --max_epochs $EPOCH_TIME --output_dir $OUT_DIR --img_size $IMG_SIZE --base_lr $LEARNING_RATE --batch_size $BATCH_SIZE
+# OUT_DIR='./logs/frac_2'
+# python train.py --dataset bcss --cfg $CFG \
+#     --root_path $DATA_DIR --max_epochs $EPOCH_TIME \
+#     --output_dir $OUT_DIR --img_size $IMG_SIZE \
+#     --base_lr $LEARNING_RATE --batch_size $BATCH_SIZE --frac 0.01

@@ -1,0 +1,10 @@
+**/__pycache__
+**/.ipynb_checkpoints
+**/*.pth
+**/*.tar
+**/*.pkl
+**/wandb
+
+logs/temp*
+
+error.txt

@@ -6,7 +6,7 @@ import numpy as np
 import torch
 import torch.backends.cudnn as cudnn
 from networks.vision_transformer import SwinUnet as ViT_seg
-from trainer import trainer_synapse
+from trainer import *
 from config import get_config
 
 parser = argparse.ArgumentParser()
@@ -26,7 +26,7 @@ parser.add_argument('--max_epochs', type=int,
 parser.add_argument('--batch_size', type=int,
                     default=24, help='batch_size per gpu')
 parser.add_argument('--n_gpu', type=int, default=1, help='total gpu')
-parser.add_argument('--deterministic', type=int,  default=1,
+parser.add_argument('--deterministic', type=int,  default=0,
                     help='whether use deterministic training')
 parser.add_argument('--base_lr', type=float,  default=0.01,
                     help='segmentation network learning rate')
@@ -55,6 +55,7 @@ parser.add_argument('--amp-opt-level', type=str, default='O1', choices=['O0', 'O
 parser.add_argument('--tag', help='tag of experiment')
 parser.add_argument('--eval', action='store_true', help='Perform evaluation only')
 parser.add_argument('--throughput', action='store_true', help='Test throughput only')
+parser.add_argument('--frac', type=float, default=1.0)
 
 args = parser.parse_args()
 if args.dataset == "Synapse":
@@ -82,6 +83,11 @@ if __name__ == "__main__":
             'list_dir': './lists/lists_Synapse',
             'num_classes': 9,
         },
+        'bcss': {
+            'root_path': args.root_path,
+            'list_dir': './lists/lists_Synapse',
+            'num_classes': 6,
+        },
     }
 
     if args.batch_size != 24 and args.batch_size % 6 == 0:
@@ -95,5 +101,8 @@ if __name__ == "__main__":
     net = ViT_seg(config, img_size=args.img_size, num_classes=args.num_classes).cuda()
     net.load_from(config)
 
-    trainer = {'Synapse': trainer_synapse,}
+    trainer = {
+        'Synapse': trainer_synapse,
+        'bcss': trainer_bcss,
+    }
     trainer[dataset_name](args, net, args.output_dir)
