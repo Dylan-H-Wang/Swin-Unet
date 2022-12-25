@@ -56,6 +56,7 @@ parser.add_argument('--tag', help='tag of experiment')
 parser.add_argument('--eval', action='store_true', help='Perform evaluation only')
 parser.add_argument('--throughput', action='store_true', help='Test throughput only')
 parser.add_argument('--frac', type=float, default=1.0)
+parser.add_argument('--fold', type=int, default=0)
 
 args = parser.parse_args()
 if args.dataset == "Synapse":
@@ -99,7 +100,7 @@ if __name__ == "__main__":
     if not os.path.exists(args.output_dir):
         os.makedirs(args.output_dir)
     net = ViT_seg(config, img_size=args.img_size, num_classes=args.num_classes).cuda()
-    net.load_from(config)
+    # net.load_from(config)
 
     trainer = {
         'Synapse': trainer_synapse,

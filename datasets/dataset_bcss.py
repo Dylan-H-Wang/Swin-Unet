@@ -14,16 +14,24 @@ import albumentations as albu
 
 logger = logging.getLogger()
 
+VAL_SET = [
+    ["OL", "LL", "E2", "EW", "GM", "S3"],
+    ['E2', 'EW', 'HN', 'D8', 'AC', 'AQ'],
+    ['BH', 'EW', 'LL', 'GI', 'A1', 'A7'],
+    ['E9', 'BH', 'A8', 'AR', 'EW', 'LL'],
+    ['D8', 'AQ', 'AR', 'C8', 'OL', 'A7']
+]
 
 class Bcss_dataset(Dataset):
-    def __init__(self, data_path, transforms, frac=1, threshold=0.1) -> None:
+    def __init__(self, data_path, transforms, frac=1, threshold=0.1, fold=0) -> None:
         super().__init__()
 
         self.data_path = data_path
-        self.csv_path = data_path + "/train_data.csv"
+        self.csv_path = data_path + "/data.csv"
         self.transforms = transforms
         self.frac = frac
         self.threshold = threshold
+        self.fold = fold
 
         self._prepare()
         
@@ -46,6 +54,9 @@ class Bcss_dataset(Dataset):
     def _prepare(self) -> None:
         data_df = pd.read_csv(self.csv_path)
         logger.info(f"Reading {len(data_df)} files in {self.csv_path}...")
+
+        data_df = data_df[~data_df["filename"].str.split("-").str[1].isin(VAL_SET[self.fold])].reset_index(drop=True)
+        logger.info(f"Using fold {self.fold} and keep {len(data_df)} train files only...")
         
         logger.info(f"Removing images with threshold of {self.threshold}...")
         data_df = data_df[data_df['ratio_masked_area']>=self.threshold].reset_index(drop=True)
@@ -59,13 +70,14 @@ class Bcss_dataset(Dataset):
 
 
 class Bcss_dataset_val(Dataset):
-    def __init__(self, data_path, transforms, threshold=0.1) -> None:
+    def __init__(self, data_path, transforms, threshold=0.1, fold=0) -> None:
         super().__init__()
 
         self.data_path = data_path
         self.csv_path = data_path + "/val_data.csv"
         self.transforms = transforms
         self.threshold = threshold
+        self.fold = fold
 
         self._prepare()
         
@@ -101,6 +113,10 @@ class Bcss_dataset_val(Dataset):
     def _prepare(self) -> None:
         data_df = pd.read_csv(self.csv_path)
         logger.info(f"Reading {len(data_df)} files in {self.csv_path}...")
+
+        data_df = data_df[data_df["filename"].str.split("-").str[1].isin(VAL_SET[self.fold])].reset_index(drop=True)
+        data_df = data_df[~data_df["filename"].str.contains("shift")].reset_index(drop=True)
+        logger.info(f"Using fold {self.fold} and keep {len(data_df)} val files only...")
         
         logger.info(f"Removing images with threshold of {self.threshold}...")
         data_df = data_df[data_df['ratio_masked_area']>=self.threshold].reset_index(drop=True)

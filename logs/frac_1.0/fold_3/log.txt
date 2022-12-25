@@ -1,0 +1,1064 @@
+[13:54:51.972] Namespace(root_path='../data/bcss/L0_1024_s512', dataset='bcss', list_dir='./lists/lists_Synapse', num_classes=6, output_dir='./logs/frac_1.0/fold_3', max_iterations=30000, max_epochs=150, batch_size=24, n_gpu=1, deterministic=0, base_lr=0.05, img_size=224, seed=1234, cfg='configs/swin_tiny_patch4_window7_224_lite.yaml', opts=None, zip=False, cache_mode='part', resume=None, accumulation_steps=None, use_checkpoint=False, amp_opt_level='O1', tag=None, eval=False, throughput=False, frac=1.0, fold=3)
+[13:54:51.996] Reading 9897 files in ../data/bcss/L0_1024_s512/data.csv...
+[13:54:52.009] Using fold 3 and keep 7036 train files only...
+[13:54:52.009] Removing images with threshold of 0.1...
+[13:54:52.010] Create train set with 6320 files...
+[13:54:52.011] Use 1.0 percent of data to train: 6320!
+[13:54:52.015] Reading 804 files in ../data/bcss/L0_1024_s512/val_data.csv...
+[13:54:52.017] Using fold 3 and keep 257 val files only...
+[13:54:52.017] Removing images with threshold of 0.1...
+[13:54:52.019] Create val set with 220 files...
+[13:54:52.901] 264 iterations per epoch. 39600 max iterations 
+[13:54:55.612] train iteration 1 : loss : 1.285812, loss_ce: 1.914872
+[13:55:15.252] train iteration 51 : loss : 0.957049, loss_ce: 1.213448
+[13:55:34.937] train iteration 101 : loss : 0.960265, loss_ce: 1.285734
+[13:55:55.005] train iteration 151 : loss : 0.841090, loss_ce: 0.951833
+[13:56:15.224] train iteration 201 : loss : 0.786608, loss_ce: 1.011421
+[13:56:35.529] train iteration 251 : loss : 0.836585, loss_ce: 1.065422
+[13:56:44.498] val epoch 0 : f1_micro : 0.5703590597425189, f1_macro : 0.4024672529527119, tumor_f1 : 0.6138504679713931, stroma_f1 : 0.6215030433876174, infla_f1 : 0.1646085983541395, necr_f1 : 0.8281974281583514, other_f1 : 0.32665987951414927, acc_micro : 0.8281974281583514
+[13:56:46.086] train iteration 265 : loss : 0.879323, loss_ce: 1.165216
+[13:57:05.943] train iteration 315 : loss : 0.809513, loss_ce: 0.913627
+[13:57:26.027] train iteration 365 : loss : 0.830537, loss_ce: 1.057132
+[13:57:46.102] train iteration 415 : loss : 0.960518, loss_ce: 1.341862
+[13:58:06.326] train iteration 465 : loss : 0.786005, loss_ce: 1.007149
+[13:58:26.405] train iteration 515 : loss : 0.923822, loss_ce: 1.185942
+[13:58:35.016] val epoch 1 : f1_micro : 0.5852019829409463, f1_macro : 0.513667208807809, tumor_f1 : 0.627066467489515, stroma_f1 : 0.6149308133338179, infla_f1 : 0.39189913868904114, necr_f1 : 0.8344160190650395, other_f1 : 0.36301109117838287, acc_micro : 0.8344160190650395
+[13:58:36.459] train iteration 529 : loss : 0.868464, loss_ce: 1.193560
+[13:58:56.195] train iteration 579 : loss : 0.930203, loss_ce: 1.241697
+[13:59:16.323] train iteration 629 : loss : 0.851284, loss_ce: 1.127174
+[13:59:36.481] train iteration 679 : loss : 0.662127, loss_ce: 0.920435
+[13:59:56.532] train iteration 729 : loss : 0.739177, loss_ce: 1.177397
+[14:00:16.677] train iteration 779 : loss : 0.661561, loss_ce: 0.804092
+[14:00:25.341] val epoch 2 : f1_micro : 0.5360466199261802, f1_macro : 0.40476878945316586, tumor_f1 : 0.6126466734068734, stroma_f1 : 0.5200327751891953, infla_f1 : 0.3402170294097492, necr_f1 : 0.8145596385002136, other_f1 : 0.12237604201904365, acc_micro : 0.8145596385002136
+[14:00:26.823] train iteration 793 : loss : 0.852464, loss_ce: 1.111183
+[14:00:46.550] train iteration 843 : loss : 0.740925, loss_ce: 1.118785
+[14:01:06.568] train iteration 893 : loss : 0.756077, loss_ce: 0.976819
+[14:01:26.610] train iteration 943 : loss : 0.717905, loss_ce: 0.905993
+[14:01:46.689] train iteration 993 : loss : 0.759120, loss_ce: 1.070098
+[14:02:06.785] train iteration 1043 : loss : 0.691436, loss_ce: 0.780420
+[14:02:15.474] val epoch 3 : f1_micro : 0.5989321512835366, f1_macro : 0.5088108001010758, tumor_f1 : 0.6514550766774586, stroma_f1 : 0.5990109124353954, infla_f1 : 0.45283717861665146, necr_f1 : 0.839981483561652, other_f1 : 0.3407508592520441, acc_micro : 0.839981483561652
+[14:02:17.003] train iteration 1057 : loss : 0.686951, loss_ce: 0.802029
+[14:02:36.672] train iteration 1107 : loss : 0.666060, loss_ce: 0.840464
+[14:02:56.653] train iteration 1157 : loss : 0.834602, loss_ce: 1.100431
+[14:03:16.912] train iteration 1207 : loss : 0.634938, loss_ce: 0.801945
+[14:03:36.807] train iteration 1257 : loss : 0.851350, loss_ce: 1.164698
+[14:03:56.943] train iteration 1307 : loss : 0.796769, loss_ce: 1.077682
+[14:04:05.680] val epoch 4 : f1_micro : 0.6606629937887192, f1_macro : 0.4555018012012754, tumor_f1 : 0.7010207261357989, stroma_f1 : 0.629249536565372, infla_f1 : 0.5778123182909829, necr_f1 : 0.8646642012255532, other_f1 : 0.2977062352001667, acc_micro : 0.8646642012255532
+[14:04:07.271] train iteration 1321 : loss : 0.829526, loss_ce: 1.183915
+[14:04:26.951] train iteration 1371 : loss : 0.737822, loss_ce: 0.995364
+[14:04:47.028] train iteration 1421 : loss : 0.930963, loss_ce: 1.436702
+[14:05:07.145] train iteration 1471 : loss : 0.743384, loss_ce: 1.078923
+[14:05:27.232] train iteration 1521 : loss : 0.791229, loss_ce: 1.040194
+[14:05:47.218] train iteration 1571 : loss : 0.767584, loss_ce: 1.023706
+[14:05:55.745] val epoch 5 : f1_micro : 0.651725058044706, f1_macro : 0.48609420763594763, tumor_f1 : 0.6611223279365471, stroma_f1 : 0.6550811428044524, infla_f1 : 0.6055501742022378, necr_f1 : 0.8607776505606515, other_f1 : 0.36586027417797595, acc_micro : 0.8607776505606515
+[14:05:57.243] train iteration 1585 : loss : 0.690805, loss_ce: 0.829717
+[14:06:17.126] train iteration 1635 : loss : 0.588473, loss_ce: 0.909305
+[14:06:37.094] train iteration 1685 : loss : 0.782854, loss_ce: 1.155686
+[14:06:57.283] train iteration 1735 : loss : 0.708817, loss_ce: 0.924936
+[14:07:17.224] train iteration 1785 : loss : 0.587600, loss_ce: 0.722963
+[14:07:37.296] train iteration 1835 : loss : 0.658093, loss_ce: 0.726430
+[14:07:45.914] val epoch 6 : f1_micro : 0.6538712424891335, f1_macro : 0.4577142745256424, tumor_f1 : 0.687585609299796, stroma_f1 : 0.6312315953629357, infla_f1 : 0.5889693349599838, necr_f1 : 0.8616064488887787, other_f1 : 0.3766974540028189, acc_micro : 0.8616064488887787
+[14:07:47.403] train iteration 1849 : loss : 0.695505, loss_ce: 0.878506
+[14:08:07.143] train iteration 1899 : loss : 0.743147, loss_ce: 1.011822
+[14:08:27.251] train iteration 1949 : loss : 0.529400, loss_ce: 0.625468
+[14:08:47.278] train iteration 1999 : loss : 0.666506, loss_ce: 0.754623
+[14:09:07.402] train iteration 2049 : loss : 0.754932, loss_ce: 1.009186
+[14:09:27.476] train iteration 2099 : loss : 0.748967, loss_ce: 1.060774
+[14:09:36.292] val epoch 7 : f1_micro : 0.6842986302716392, f1_macro : 0.557410754263401, tumor_f1 : 0.721371916787965, stroma_f1 : 0.6444127144558089, infla_f1 : 0.615499952009746, necr_f1 : 0.8737571026597705, other_f1 : 0.3771977481831397, acc_micro : 0.8737571026597705
+[14:09:37.847] train iteration 2113 : loss : 0.627156, loss_ce: 0.847920
+[14:09:57.550] train iteration 2163 : loss : 0.689979, loss_ce: 0.796566
+[14:10:17.599] train iteration 2213 : loss : 0.742398, loss_ce: 1.016288
+[14:10:37.702] train iteration 2263 : loss : 0.851881, loss_ce: 1.125360
+[14:10:57.751] train iteration 2313 : loss : 0.920717, loss_ce: 1.371742
+[14:11:17.951] train iteration 2363 : loss : 0.783903, loss_ce: 1.007594
+[14:11:26.571] val epoch 8 : f1_micro : 0.6801076169524874, f1_macro : 0.4929448068141937, tumor_f1 : 0.7211468879665647, stroma_f1 : 0.6582193289484296, infla_f1 : 0.6238723397254944, necr_f1 : 0.8720928260258266, other_f1 : 0.3682219399550896, acc_micro : 0.8720928260258266
+[14:11:28.096] train iteration 2377 : loss : 0.727984, loss_ce: 1.002240
+[14:11:47.853] train iteration 2427 : loss : 0.815778, loss_ce: 1.121409
+[14:12:08.037] train iteration 2477 : loss : 0.768605, loss_ce: 0.847148
+[14:12:28.085] train iteration 2527 : loss : 0.622865, loss_ce: 0.858693
+[14:12:48.241] train iteration 2577 : loss : 0.691175, loss_ce: 0.836927
+[14:13:08.246] train iteration 2627 : loss : 0.774819, loss_ce: 0.952633
+[14:13:16.836] val epoch 9 : f1_micro : 0.6407788608755384, f1_macro : 0.4757590613194874, tumor_f1 : 0.6818434787648064, stroma_f1 : 0.5762918097399441, infla_f1 : 0.5910226819770676, necr_f1 : 0.8563512137957981, other_f1 : 0.3793059723331161, acc_micro : 0.8563512137957981
+[14:13:18.346] train iteration 2641 : loss : 0.841141, loss_ce: 1.191214
+[14:13:38.148] train iteration 2691 : loss : 0.745773, loss_ce: 1.050609
+[14:13:58.178] train iteration 2741 : loss : 0.625315, loss_ce: 0.745704
+[14:14:18.342] train iteration 2791 : loss : 0.566664, loss_ce: 0.668587
+[14:14:38.410] train iteration 2841 : loss : 0.791741, loss_ce: 1.104767
+[14:14:58.510] train iteration 2891 : loss : 0.800311, loss_ce: 1.112229
+[14:15:07.107] val epoch 10 : f1_micro : 0.6635580446038928, f1_macro : 0.5164725301521165, tumor_f1 : 0.705759913793632, stroma_f1 : 0.5979834401181766, infla_f1 : 0.6078369298151561, necr_f1 : 0.8654397002288273, other_f1 : 0.38294036433632883, acc_micro : 0.8654397002288273
+[14:15:08.601] train iteration 2905 : loss : 0.656544, loss_ce: 0.952715
+[14:15:28.422] train iteration 2955 : loss : 0.603351, loss_ce: 0.683523
+[14:15:48.539] train iteration 3005 : loss : 0.763590, loss_ce: 0.972126
+[14:16:08.511] train iteration 3055 : loss : 0.571337, loss_ce: 0.716747
+[14:16:28.693] train iteration 3105 : loss : 0.642008, loss_ce: 0.860236
+[14:16:48.809] train iteration 3155 : loss : 0.542601, loss_ce: 0.629558
+[14:16:57.422] val epoch 11 : f1_micro : 0.665033621447427, f1_macro : 0.46825495255844934, tumor_f1 : 0.7080362055982862, stroma_f1 : 0.6330706285578864, infla_f1 : 0.5401542122874942, necr_f1 : 0.8661483866827828, other_f1 : 0.3826438968868128, acc_micro : 0.8661483866827828
+[14:16:59.056] train iteration 3169 : loss : 0.707287, loss_ce: 0.850416
+[14:17:18.855] train iteration 3219 : loss : 0.761341, loss_ce: 0.959621
+[14:17:38.964] train iteration 3269 : loss : 0.785412, loss_ce: 1.042029
+[14:17:59.000] train iteration 3319 : loss : 0.572151, loss_ce: 0.679806
+[14:18:19.025] train iteration 3369 : loss : 0.727475, loss_ce: 0.986460
+[14:18:39.242] train iteration 3419 : loss : 0.649712, loss_ce: 0.828134
+[14:18:47.931] val epoch 12 : f1_micro : 0.6809103063174656, f1_macro : 0.507221424153873, tumor_f1 : 0.71506709924766, stroma_f1 : 0.6440396553703717, infla_f1 : 0.6434645695345742, necr_f1 : 0.8723999261856079, other_f1 : 0.37654430798387956, acc_micro : 0.8723999261856079
+[14:18:49.318] train iteration 3433 : loss : 0.622657, loss_ce: 0.794288
+[14:19:09.060] train iteration 3483 : loss : 0.658042, loss_ce: 0.843199
+[14:19:29.120] train iteration 3533 : loss : 0.621256, loss_ce: 0.875424
+[14:19:49.235] train iteration 3583 : loss : 0.527549, loss_ce: 0.671701
+[14:20:09.343] train iteration 3633 : loss : 0.596133, loss_ce: 0.748732
+[14:20:29.386] train iteration 3683 : loss : 0.587125, loss_ce: 0.816714
+[14:20:38.103] val epoch 13 : f1_micro : 0.6426381702933993, f1_macro : 0.48150041167225155, tumor_f1 : 0.6895342894962856, stroma_f1 : 0.5984799819333213, infla_f1 : 0.5833650183464799, necr_f1 : 0.8570699095726013, other_f1 : 0.39189804451806204, acc_micro : 0.8570699095726013
+[14:20:39.553] train iteration 3697 : loss : 0.396466, loss_ce: 0.541557
+[14:20:59.314] train iteration 3747 : loss : 0.625868, loss_ce: 0.837569
+[14:21:19.369] train iteration 3797 : loss : 0.596354, loss_ce: 0.615477
+[14:21:39.551] train iteration 3847 : loss : 0.751324, loss_ce: 1.047006
+[14:21:59.674] train iteration 3897 : loss : 0.739263, loss_ce: 0.996769
+[14:22:19.744] train iteration 3947 : loss : 0.550758, loss_ce: 0.698549
+[14:22:28.509] val epoch 14 : f1_micro : 0.6730648343052182, f1_macro : 0.5134544862168176, tumor_f1 : 0.7277812170130866, stroma_f1 : 0.616411414529596, infla_f1 : 0.6485434536423001, necr_f1 : 0.8692583356584821, other_f1 : 0.39428241471094744, acc_micro : 0.8692583356584821
+[14:22:29.980] train iteration 3961 : loss : 0.655597, loss_ce: 0.902965
+[14:22:49.811] train iteration 4011 : loss : 0.734192, loss_ce: 0.908921
+[14:23:09.912] train iteration 4061 : loss : 0.569122, loss_ce: 0.644049
+[14:23:30.018] train iteration 4111 : loss : 0.616306, loss_ce: 0.753870
+[14:23:50.097] train iteration 4161 : loss : 0.489913, loss_ce: 0.523540
+[14:24:10.188] train iteration 4211 : loss : 0.501202, loss_ce: 0.574138
+[14:24:18.971] val epoch 15 : f1_micro : 0.6391545874731881, f1_macro : 0.508128319467817, tumor_f1 : 0.7044397188084466, stroma_f1 : 0.5982258420969758, infla_f1 : 0.6407169207398381, necr_f1 : 0.8557015912873405, other_f1 : 0.39537749173385756, acc_micro : 0.8557015912873405
+[14:24:20.487] train iteration 4225 : loss : 0.787668, loss_ce: 1.061467
+[14:24:40.224] train iteration 4275 : loss : 0.675667, loss_ce: 0.953882
+[14:25:00.328] train iteration 4325 : loss : 0.663081, loss_ce: 0.815862
+[14:25:20.377] train iteration 4375 : loss : 0.611724, loss_ce: 0.698760
+[14:25:40.577] train iteration 4425 : loss : 0.680405, loss_ce: 0.883515
+[14:26:00.699] train iteration 4475 : loss : 0.658420, loss_ce: 0.708125
+[14:26:09.233] val epoch 16 : f1_micro : 0.6045024948460715, f1_macro : 0.47237796975033625, tumor_f1 : 0.6972296120865005, stroma_f1 : 0.5390774096761431, infla_f1 : 0.624627519931112, necr_f1 : 0.8418803598199572, other_f1 : 0.3802695012917476, acc_micro : 0.8418803598199572
+[14:26:10.689] train iteration 4489 : loss : 0.914545, loss_ce: 1.393799
+[14:26:30.454] train iteration 4539 : loss : 0.658739, loss_ce: 0.871739
+[14:26:50.543] train iteration 4589 : loss : 0.757448, loss_ce: 1.132873
+[14:27:10.747] train iteration 4639 : loss : 0.545072, loss_ce: 0.753614
+[14:27:30.698] train iteration 4689 : loss : 0.703086, loss_ce: 0.863857
+[14:27:50.947] train iteration 4739 : loss : 0.743425, loss_ce: 0.909267
+[14:27:59.614] val epoch 17 : f1_micro : 0.6319814452103206, f1_macro : 0.49454151519707273, tumor_f1 : 0.705327359693391, stroma_f1 : 0.5666455051728657, infla_f1 : 0.5898711255618504, necr_f1 : 0.8528255224227905, other_f1 : 0.37539790251425337, acc_micro : 0.8528255224227905
+[14:28:01.197] train iteration 4753 : loss : 0.453487, loss_ce: 0.744714
+[14:28:21.031] train iteration 4803 : loss : 0.373918, loss_ce: 0.527555
+[14:28:41.097] train iteration 4853 : loss : 0.764959, loss_ce: 0.989129
+[14:29:01.235] train iteration 4903 : loss : 0.736794, loss_ce: 0.914575
+[14:29:21.393] train iteration 4953 : loss : 0.518579, loss_ce: 0.561887
+[14:29:41.543] train iteration 5003 : loss : 0.651052, loss_ce: 0.871766
+[14:29:50.126] val epoch 18 : f1_micro : 0.6141297221183777, f1_macro : 0.5031931245965617, tumor_f1 : 0.7094742804765701, stroma_f1 : 0.5191018639930657, infla_f1 : 0.6360318692667144, necr_f1 : 0.8456891179084778, other_f1 : 0.3760757005074993, acc_micro : 0.8456891179084778
+[14:29:51.675] train iteration 5017 : loss : 0.513082, loss_ce: 0.568803
+[14:30:11.464] train iteration 5067 : loss : 0.709900, loss_ce: 0.989247
+[14:30:31.642] train iteration 5117 : loss : 0.644436, loss_ce: 0.974653
+[14:30:51.813] train iteration 5167 : loss : 0.436919, loss_ce: 0.551546
+[14:31:11.920] train iteration 5217 : loss : 0.594529, loss_ce: 0.750110
+[14:31:32.066] train iteration 5267 : loss : 0.634479, loss_ce: 0.822103
+[14:31:40.685] val epoch 19 : f1_micro : 0.6256628291947501, f1_macro : 0.49538761590208324, tumor_f1 : 0.6998561918735504, stroma_f1 : 0.5611577917422567, infla_f1 : 0.6305347148861203, necr_f1 : 0.8503315278462001, other_f1 : 0.3908172420092991, acc_micro : 0.8503315278462001
+[14:31:42.100] train iteration 5281 : loss : 0.725724, loss_ce: 1.021576
+[14:32:01.941] train iteration 5331 : loss : 0.524597, loss_ce: 0.712053
+[14:32:21.898] train iteration 5381 : loss : 0.641476, loss_ce: 0.856368
+[14:32:42.043] train iteration 5431 : loss : 0.611737, loss_ce: 0.795766
+[14:33:02.265] train iteration 5481 : loss : 0.626842, loss_ce: 0.703223
+[14:33:22.314] train iteration 5531 : loss : 0.579817, loss_ce: 0.614615
+[14:33:30.924] val epoch 20 : f1_micro : 0.605099947324821, f1_macro : 0.47230872618300573, tumor_f1 : 0.7177123853138515, stroma_f1 : 0.4863839341061456, infla_f1 : 0.6496894625680787, necr_f1 : 0.8421140951769692, other_f1 : 0.39434275057699, acc_micro : 0.8421140951769692
+[14:33:32.449] train iteration 5545 : loss : 0.641936, loss_ce: 0.787738
+[14:33:52.230] train iteration 5595 : loss : 0.530946, loss_ce: 0.600071
+[14:34:12.311] train iteration 5645 : loss : 0.569467, loss_ce: 0.759585
+[14:34:32.403] train iteration 5695 : loss : 0.697596, loss_ce: 0.946850
+[14:34:52.519] train iteration 5745 : loss : 0.678203, loss_ce: 0.905606
+[14:35:12.752] train iteration 5795 : loss : 0.547098, loss_ce: 0.804084
+[14:35:21.425] val epoch 21 : f1_micro : 0.6577714873211724, f1_macro : 0.5120923593640327, tumor_f1 : 0.7250093115227563, stroma_f1 : 0.596039429306984, infla_f1 : 0.6350370517798832, necr_f1 : 0.8631627815110343, other_f1 : 0.38259708881378174, acc_micro : 0.8631627815110343
+[14:35:22.931] train iteration 5809 : loss : 0.269127, loss_ce: 0.335850
+[14:35:42.668] train iteration 5859 : loss : 0.492711, loss_ce: 0.576483
+[14:36:02.705] train iteration 5909 : loss : 0.688018, loss_ce: 0.958229
+[14:36:22.945] train iteration 5959 : loss : 0.684865, loss_ce: 0.948882
+[14:36:43.152] train iteration 6009 : loss : 0.570761, loss_ce: 0.810443
+[14:37:03.231] train iteration 6059 : loss : 0.572500, loss_ce: 0.715727
+[14:37:11.871] val epoch 22 : f1_micro : 0.6324409565755299, f1_macro : 0.49817425651209696, tumor_f1 : 0.7101360814911979, stroma_f1 : 0.5760841497353145, infla_f1 : 0.6149459066135543, necr_f1 : 0.8530872975076947, other_f1 : 0.3745642208627292, acc_micro : 0.8530872975076947
+[14:37:13.331] train iteration 6073 : loss : 0.366136, loss_ce: 0.532070
+[14:37:33.186] train iteration 6123 : loss : 0.701065, loss_ce: 1.024975
+[14:37:53.281] train iteration 6173 : loss : 0.630289, loss_ce: 0.807011
+[14:38:13.339] train iteration 6223 : loss : 0.695797, loss_ce: 0.960269
+[14:38:33.642] train iteration 6273 : loss : 0.789814, loss_ce: 1.044838
+[14:38:53.668] train iteration 6323 : loss : 0.911072, loss_ce: 1.417781
+[14:39:02.404] val epoch 23 : f1_micro : 0.633482311453138, f1_macro : 0.5179050543478557, tumor_f1 : 0.7390867727143424, stroma_f1 : 0.5338972037924188, infla_f1 : 0.6894188182694572, necr_f1 : 0.8534359889371055, other_f1 : 0.38213247187169536, acc_micro : 0.8534359889371055
+[14:39:03.893] train iteration 6337 : loss : 0.414951, loss_ce: 0.595926
+[14:39:23.653] train iteration 6387 : loss : 0.701313, loss_ce: 0.901810
+[14:39:43.710] train iteration 6437 : loss : 0.520640, loss_ce: 0.719450
+[14:40:03.899] train iteration 6487 : loss : 0.662275, loss_ce: 0.962809
+[14:40:24.024] train iteration 6537 : loss : 0.538063, loss_ce: 0.651287
+[14:40:44.119] train iteration 6587 : loss : 0.665421, loss_ce: 0.840523
+[14:40:52.686] val epoch 24 : f1_micro : 0.6317999022347587, f1_macro : 0.506607286632061, tumor_f1 : 0.7242649729762759, stroma_f1 : 0.5452868246606418, infla_f1 : 0.6573972004864898, necr_f1 : 0.8527735301426479, other_f1 : 0.38523705915680956, acc_micro : 0.8527735301426479
+[14:40:54.195] train iteration 6601 : loss : 0.487851, loss_ce: 0.579726
+[14:41:13.975] train iteration 6651 : loss : 0.605894, loss_ce: 0.839680
+[14:41:34.090] train iteration 6701 : loss : 0.680925, loss_ce: 0.801599
+[14:41:54.204] train iteration 6751 : loss : 0.681598, loss_ce: 0.949517
+[14:42:14.315] train iteration 6801 : loss : 0.728662, loss_ce: 1.026519
+[14:42:34.534] train iteration 6851 : loss : 0.562093, loss_ce: 0.683373
+[14:42:43.101] val epoch 25 : f1_micro : 0.6733015158346721, f1_macro : 0.5360864996910095, tumor_f1 : 0.7123769755874362, stroma_f1 : 0.6304506084748677, infla_f1 : 0.6275778455393655, necr_f1 : 0.869352502482278, other_f1 : 0.3762167756046568, acc_micro : 0.869352502482278
+[14:42:44.627] train iteration 6865 : loss : 0.792262, loss_ce: 1.014361
+[14:43:04.447] train iteration 6915 : loss : 0.702075, loss_ce: 0.911801
+[14:43:24.466] train iteration 6965 : loss : 0.641291, loss_ce: 0.800023
+[14:43:44.595] train iteration 7015 : loss : 0.537970, loss_ce: 0.752546
+[14:44:04.682] train iteration 7065 : loss : 0.576237, loss_ce: 0.705912
+[14:44:24.724] train iteration 7115 : loss : 0.661262, loss_ce: 1.024521
+[14:44:33.271] val epoch 26 : f1_micro : 0.6437091273920876, f1_macro : 0.5080055221915245, tumor_f1 : 0.7334321907588414, stroma_f1 : 0.571680656501225, infla_f1 : 0.5777357986995152, necr_f1 : 0.8575449798788343, other_f1 : 0.37884262716397643, acc_micro : 0.8575449798788343
+[14:44:34.809] train iteration 7129 : loss : 0.548700, loss_ce: 0.568245
+[14:44:54.612] train iteration 7179 : loss : 0.732027, loss_ce: 0.967038
+[14:45:14.741] train iteration 7229 : loss : 0.623365, loss_ce: 0.623432
+[14:45:34.789] train iteration 7279 : loss : 0.688287, loss_ce: 1.041770
+[14:45:55.031] train iteration 7329 : loss : 0.676791, loss_ce: 0.876698
+[14:46:15.066] train iteration 7379 : loss : 0.560216, loss_ce: 0.619722
+[14:46:23.642] val epoch 27 : f1_micro : 0.642022369163377, f1_macro : 0.5112870697464261, tumor_f1 : 0.7103373408317566, stroma_f1 : 0.5646421595343522, infla_f1 : 0.7039797777043921, necr_f1 : 0.8568696635110038, other_f1 : 0.3968516391302858, acc_micro : 0.8568696635110038
+[14:46:25.194] train iteration 7393 : loss : 0.450407, loss_ce: 0.455704
+[14:46:44.926] train iteration 7443 : loss : 0.498214, loss_ce: 0.568367
+[14:47:05.043] train iteration 7493 : loss : 0.588222, loss_ce: 0.790294
+[14:47:25.115] train iteration 7543 : loss : 0.585477, loss_ce: 0.779276
+[14:47:45.300] train iteration 7593 : loss : 0.926501, loss_ce: 1.482428
+[14:48:05.306] train iteration 7643 : loss : 0.666499, loss_ce: 0.951369
+[14:48:14.028] val epoch 28 : f1_micro : 0.6585387928145272, f1_macro : 0.5074405122016158, tumor_f1 : 0.7339042212281909, stroma_f1 : 0.5746944468202335, infla_f1 : 0.5980302137987954, necr_f1 : 0.8634732663631439, other_f1 : 0.394964840629005, acc_micro : 0.8634732663631439
+[14:48:15.543] train iteration 7657 : loss : 0.812141, loss_ce: 1.178939
+[14:48:35.347] train iteration 7707 : loss : 0.661685, loss_ce: 0.801238
+[14:48:55.397] train iteration 7757 : loss : 0.633579, loss_ce: 0.853761
+[14:49:15.513] train iteration 7807 : loss : 0.638484, loss_ce: 0.840784
+[14:49:35.623] train iteration 7857 : loss : 0.445956, loss_ce: 0.639999
+[14:49:55.662] train iteration 7907 : loss : 0.654137, loss_ce: 0.810162
+[14:50:04.265] val epoch 29 : f1_micro : 0.6404200749737876, f1_macro : 0.49514724207775934, tumor_f1 : 0.7287643445389611, stroma_f1 : 0.5444942003835292, infla_f1 : 0.6051179632278425, necr_f1 : 0.8562016572271075, other_f1 : 0.3950830377372248, acc_micro : 0.8562016572271075
+[14:50:05.881] train iteration 7921 : loss : 0.650319, loss_ce: 0.805744
+[14:50:25.645] train iteration 7971 : loss : 0.537474, loss_ce: 0.696952
+[14:50:45.723] train iteration 8021 : loss : 0.562037, loss_ce: 0.733338
+[14:51:05.945] train iteration 8071 : loss : 0.444441, loss_ce: 0.515071
+[14:51:25.985] train iteration 8121 : loss : 0.388856, loss_ce: 0.604145
+[14:51:46.051] train iteration 8171 : loss : 0.765296, loss_ce: 1.140281
+[14:51:54.652] val epoch 30 : f1_micro : 0.6680020477090564, f1_macro : 0.549283504486084, tumor_f1 : 0.7415125497749874, stroma_f1 : 0.5855830184050969, infla_f1 : 0.6873928434880716, necr_f1 : 0.8672459040369306, other_f1 : 0.392500079769109, acc_micro : 0.8672459040369306
+[14:51:56.156] train iteration 8185 : loss : 0.646744, loss_ce: 0.823929
+[14:52:15.999] train iteration 8235 : loss : 0.611008, loss_ce: 0.904576
+[14:52:36.171] train iteration 8285 : loss : 0.665756, loss_ce: 0.863187
+[14:52:56.142] train iteration 8335 : loss : 0.674426, loss_ce: 0.910015
+[14:53:16.287] train iteration 8385 : loss : 0.608304, loss_ce: 0.755292
+[14:53:36.473] train iteration 8435 : loss : 0.653723, loss_ce: 0.797130
+[14:53:44.942] val epoch 31 : f1_micro : 0.6575976014137268, f1_macro : 0.5293543466499874, tumor_f1 : 0.738429456949234, stroma_f1 : 0.5549647084304264, infla_f1 : 0.5972259214946202, necr_f1 : 0.8630869260856083, other_f1 : 0.38952415117195677, acc_micro : 0.8630869260856083
+[14:53:46.432] train iteration 8449 : loss : 0.372353, loss_ce: 0.456307
+[14:54:06.324] train iteration 8499 : loss : 0.589402, loss_ce: 0.778368
+[14:54:26.380] train iteration 8549 : loss : 0.568103, loss_ce: 0.844378
+[14:54:46.562] train iteration 8599 : loss : 0.507570, loss_ce: 0.753439
+[14:55:06.658] train iteration 8649 : loss : 0.467439, loss_ce: 0.603746
+[14:55:26.688] train iteration 8699 : loss : 0.400712, loss_ce: 0.597223
+[14:55:35.479] val epoch 32 : f1_micro : 0.6115122341683933, f1_macro : 0.49503457652670996, tumor_f1 : 0.7245129602296012, stroma_f1 : 0.4703835223668388, infla_f1 : 0.6479848458298615, necr_f1 : 0.8447242208889553, other_f1 : 0.3851730806220855, acc_micro : 0.8447242208889553
+[14:55:36.837] train iteration 8713 : loss : 0.607119, loss_ce: 0.708740
+[14:55:56.567] train iteration 8763 : loss : 0.679620, loss_ce: 0.910257
+[14:56:16.647] train iteration 8813 : loss : 0.624634, loss_ce: 0.982241
+[14:56:36.832] train iteration 8863 : loss : 0.352582, loss_ce: 0.536811
+[14:56:56.883] train iteration 8913 : loss : 0.653805, loss_ce: 0.798374
+[14:57:17.137] train iteration 8963 : loss : 0.637732, loss_ce: 0.941809
+[14:57:25.940] val epoch 33 : f1_micro : 0.6543511620589665, f1_macro : 0.5301232827561242, tumor_f1 : 0.7209362919841494, stroma_f1 : 0.6039831319025585, infla_f1 : 0.6206097419240645, necr_f1 : 0.8617720050471169, other_f1 : 0.39031160469832166, acc_micro : 0.8617720050471169
+[14:57:27.490] train iteration 8977 : loss : 0.689586, loss_ce: 0.895932
+[14:57:47.181] train iteration 9027 : loss : 0.632981, loss_ce: 0.743347
+[14:58:07.226] train iteration 9077 : loss : 0.757984, loss_ce: 1.184681
+[14:58:27.417] train iteration 9127 : loss : 0.526549, loss_ce: 0.685480
+[14:58:47.664] train iteration 9177 : loss : 0.513275, loss_ce: 0.703722
+[14:59:07.794] train iteration 9227 : loss : 0.650719, loss_ce: 0.835564
+[14:59:16.359] val epoch 34 : f1_micro : 0.6701938211917877, f1_macro : 0.5313847714236805, tumor_f1 : 0.7363936177321843, stroma_f1 : 0.594593519544495, infla_f1 : 0.6354805920273066, necr_f1 : 0.8681329701628003, other_f1 : 0.38223943540028166, acc_micro : 0.8681329701628003
+[14:59:17.845] train iteration 9241 : loss : 0.477703, loss_ce: 0.613769
+[14:59:37.600] train iteration 9291 : loss : 0.659858, loss_ce: 0.909910
+[14:59:57.795] train iteration 9341 : loss : 0.505075, loss_ce: 0.709464
+[15:00:17.863] train iteration 9391 : loss : 0.685767, loss_ce: 0.869214
+[15:00:37.925] train iteration 9441 : loss : 0.380831, loss_ce: 0.607125
+[15:00:58.081] train iteration 9491 : loss : 0.596863, loss_ce: 0.845412
+[15:01:06.646] val epoch 35 : f1_micro : 0.6806415574891227, f1_macro : 0.5355267950466701, tumor_f1 : 0.7281694007771355, stroma_f1 : 0.6329776729856219, infla_f1 : 0.623245646911008, necr_f1 : 0.8722836886133466, other_f1 : 0.4005198021020208, acc_micro : 0.8722836886133466
+[15:01:08.107] train iteration 9505 : loss : 0.522974, loss_ce: 0.478572
+[15:01:27.922] train iteration 9555 : loss : 0.836073, loss_ce: 1.227468
+[15:01:48.035] train iteration 9605 : loss : 0.531573, loss_ce: 0.791323
+[15:02:08.118] train iteration 9655 : loss : 0.524839, loss_ce: 0.721230
+[15:02:28.239] train iteration 9705 : loss : 0.628606, loss_ce: 0.840397
+[15:02:48.425] train iteration 9755 : loss : 0.735413, loss_ce: 1.000764
+[15:02:57.114] val epoch 36 : f1_micro : 0.6271701135805675, f1_macro : 0.5191228613257408, tumor_f1 : 0.7353323996067047, stroma_f1 : 0.5081996896437236, infla_f1 : 0.6079622390014785, necr_f1 : 0.8509376687662942, other_f1 : 0.3829498876418386, acc_micro : 0.8509376687662942
+[15:02:58.595] train iteration 9769 : loss : 0.687260, loss_ce: 0.845066
+[15:03:18.336] train iteration 9819 : loss : 0.622648, loss_ce: 0.753343
+[15:03:38.485] train iteration 9869 : loss : 0.586729, loss_ce: 0.767929
+[15:03:58.509] train iteration 9919 : loss : 0.573415, loss_ce: 0.780091
+[15:04:18.629] train iteration 9969 : loss : 0.666001, loss_ce: 0.874200
+[15:04:38.849] train iteration 10019 : loss : 0.464328, loss_ce: 0.745017
+[15:04:47.529] val epoch 37 : f1_micro : 0.6637831202575138, f1_macro : 0.5205142785395894, tumor_f1 : 0.7210683694907597, stroma_f1 : 0.5955677096332822, infla_f1 : 0.6244777632611138, necr_f1 : 0.8655778893402645, other_f1 : 0.4058212073785918, acc_micro : 0.8655778893402645
+[15:04:49.063] train iteration 10033 : loss : 0.606541, loss_ce: 0.679904
+[15:05:08.862] train iteration 10083 : loss : 0.533906, loss_ce: 0.685294
+[15:05:28.824] train iteration 10133 : loss : 0.577882, loss_ce: 0.620461
+[15:05:48.908] train iteration 10183 : loss : 0.638206, loss_ce: 0.973302
+[15:06:09.112] train iteration 10233 : loss : 0.676726, loss_ce: 0.927358
+[15:06:29.186] train iteration 10283 : loss : 0.649020, loss_ce: 0.908304
+[15:06:37.878] val epoch 38 : f1_micro : 0.6215390084045274, f1_macro : 0.5140216531498092, tumor_f1 : 0.7213800996541977, stroma_f1 : 0.5107358427984374, infla_f1 : 0.6523153845752988, necr_f1 : 0.84867810351508, other_f1 : 0.3914047937308039, acc_micro : 0.84867810351508
+[15:06:39.464] train iteration 10297 : loss : 0.462330, loss_ce: 0.644815
+[15:06:59.272] train iteration 10347 : loss : 0.636595, loss_ce: 0.827818
+[15:07:19.226] train iteration 10397 : loss : 0.496604, loss_ce: 0.586255
+[15:07:39.404] train iteration 10447 : loss : 0.680087, loss_ce: 0.910274
+[15:07:59.491] train iteration 10497 : loss : 0.531034, loss_ce: 0.704603
+[15:08:19.514] train iteration 10547 : loss : 0.602140, loss_ce: 0.651538
+[15:08:28.086] val epoch 39 : f1_micro : 0.664596859897886, f1_macro : 0.5441986482058253, tumor_f1 : 0.7400590521948678, stroma_f1 : 0.5822972841560841, infla_f1 : 0.6014179587364197, necr_f1 : 0.8658773813928876, other_f1 : 0.3872828967869282, acc_micro : 0.8658773813928876
+[15:08:29.583] train iteration 10561 : loss : 0.669587, loss_ce: 0.981798
+[15:08:49.362] train iteration 10611 : loss : 0.614368, loss_ce: 0.756577
+[15:09:09.420] train iteration 10661 : loss : 0.488289, loss_ce: 0.701304
+[15:09:29.475] train iteration 10711 : loss : 0.578711, loss_ce: 0.796443
+[15:09:49.599] train iteration 10761 : loss : 0.604599, loss_ce: 0.913355
+[15:10:09.639] train iteration 10811 : loss : 0.669717, loss_ce: 1.063319
+[15:10:18.221] val epoch 40 : f1_micro : 0.6451926912580218, f1_macro : 0.5263509580067226, tumor_f1 : 0.7323148080280849, stroma_f1 : 0.5597435551296387, infla_f1 : 0.6609279045036861, necr_f1 : 0.8581316258226123, other_f1 : 0.374271228111216, acc_micro : 0.8581316258226123
+[15:10:19.669] train iteration 10825 : loss : 0.602215, loss_ce: 0.865883
+[15:10:39.424] train iteration 10875 : loss : 0.698840, loss_ce: 1.047029
+[15:10:59.397] train iteration 10925 : loss : 0.520955, loss_ce: 0.622635
+[15:11:19.526] train iteration 10975 : loss : 0.559020, loss_ce: 0.768277
+[15:11:39.711] train iteration 11025 : loss : 0.630260, loss_ce: 0.918924
+[15:11:59.710] train iteration 11075 : loss : 0.586776, loss_ce: 0.703873
+[15:12:08.455] val epoch 41 : f1_micro : 0.6660615972110203, f1_macro : 0.5298645326069423, tumor_f1 : 0.7309846963201251, stroma_f1 : 0.6028935770903315, infla_f1 : 0.675852578665529, necr_f1 : 0.8665235425744738, other_f1 : 0.3907639566542847, acc_micro : 0.8665235425744738
+[15:12:09.939] train iteration 11089 : loss : 0.556212, loss_ce: 0.705924
+[15:12:29.653] train iteration 11139 : loss : 0.401193, loss_ce: 0.588547
+[15:12:49.745] train iteration 11189 : loss : 0.592823, loss_ce: 0.918455
+[15:13:09.746] train iteration 11239 : loss : 0.492465, loss_ce: 0.718745
+[15:13:29.884] train iteration 11289 : loss : 0.598054, loss_ce: 0.754706
+[15:13:49.894] train iteration 11339 : loss : 0.549979, loss_ce: 0.709978
+[15:13:58.573] val epoch 42 : f1_micro : 0.6314851364919117, f1_macro : 0.5203192521418843, tumor_f1 : 0.7305083615439278, stroma_f1 : 0.5241484852241618, infla_f1 : 0.6324266152722495, necr_f1 : 0.8526480708803449, other_f1 : 0.38202910125255585, acc_micro : 0.8526480708803449
+[15:14:00.054] train iteration 11353 : loss : 0.515640, loss_ce: 0.735752
+[15:14:19.730] train iteration 11403 : loss : 0.503009, loss_ce: 0.585169
+[15:14:39.744] train iteration 11453 : loss : 0.447118, loss_ce: 0.519499
+[15:14:59.853] train iteration 11503 : loss : 0.587122, loss_ce: 0.815104
+[15:15:19.921] train iteration 11553 : loss : 0.677434, loss_ce: 0.907073
+[15:15:39.967] train iteration 11603 : loss : 0.370363, loss_ce: 0.335931
+[15:15:48.698] val epoch 43 : f1_micro : 0.6396816479308265, f1_macro : 0.490079436983381, tumor_f1 : 0.7376475440604346, stroma_f1 : 0.546112063739981, infla_f1 : 0.6833827602011817, necr_f1 : 0.8559146523475647, other_f1 : 0.39335042983293533, acc_micro : 0.8559146523475647
+[15:15:50.228] train iteration 11617 : loss : 0.696301, loss_ce: 0.983631
+[15:16:09.948] train iteration 11667 : loss : 0.527034, loss_ce: 0.733504
+[15:16:29.990] train iteration 11717 : loss : 0.571840, loss_ce: 0.747976
+[15:16:50.013] train iteration 11767 : loss : 0.470852, loss_ce: 0.540203
+[15:17:10.098] train iteration 11817 : loss : 0.669124, loss_ce: 0.923390
+[15:17:30.170] train iteration 11867 : loss : 0.694003, loss_ce: 0.899765
+[15:17:38.738] val epoch 44 : f1_micro : 0.6425248788935798, f1_macro : 0.5330132767558098, tumor_f1 : 0.7151680929320199, stroma_f1 : 0.5885282520736966, infla_f1 : 0.6065719361816134, necr_f1 : 0.8570542250360761, other_f1 : 0.3866426966020039, acc_micro : 0.8570542250360761
+[15:17:40.216] train iteration 11881 : loss : 0.540940, loss_ce: 0.653773
+[15:18:00.035] train iteration 11931 : loss : 0.544082, loss_ce: 0.709527
+[15:18:20.001] train iteration 11981 : loss : 0.397010, loss_ce: 0.612251
+[15:18:40.012] train iteration 12031 : loss : 0.467980, loss_ce: 0.542500
+[15:19:00.058] train iteration 12081 : loss : 0.557163, loss_ce: 0.790868
+[15:19:20.019] train iteration 12131 : loss : 0.481803, loss_ce: 0.553292
+[15:19:28.706] val epoch 45 : f1_micro : 0.6659448806728635, f1_macro : 0.5343450499432427, tumor_f1 : 0.7407075443438121, stroma_f1 : 0.5893251740240625, infla_f1 : 0.6587788345558303, necr_f1 : 0.8664121159485408, other_f1 : 0.38988374918699265, acc_micro : 0.8664121159485408
+[15:19:30.235] train iteration 12145 : loss : 0.528096, loss_ce: 0.555375
+[15:19:50.019] train iteration 12195 : loss : 0.580659, loss_ce: 0.813743
+[15:20:10.017] train iteration 12245 : loss : 0.485788, loss_ce: 0.587471
+[15:20:29.960] train iteration 12295 : loss : 0.540952, loss_ce: 0.646667
+[15:20:50.074] train iteration 12345 : loss : 0.575639, loss_ce: 0.823039
+[15:21:10.151] train iteration 12395 : loss : 0.546333, loss_ce: 0.727598
+[15:21:18.715] val epoch 46 : f1_micro : 0.570911705493927, f1_macro : 0.4501720720103809, tumor_f1 : 0.7004041182143348, stroma_f1 : 0.4257267436810902, infla_f1 : 0.6167691381914275, necr_f1 : 0.8284936206681388, other_f1 : 0.3861767585788454, acc_micro : 0.8284936206681388
+[15:21:20.223] train iteration 12409 : loss : 0.518582, loss_ce: 0.583603
+[15:21:40.066] train iteration 12459 : loss : 0.666144, loss_ce: 0.913076
+[15:22:00.059] train iteration 12509 : loss : 0.656574, loss_ce: 0.851934
+[15:22:20.143] train iteration 12559 : loss : 0.483824, loss_ce: 0.709072
+[15:22:40.186] train iteration 12609 : loss : 0.552668, loss_ce: 0.765669
+[15:23:00.143] train iteration 12659 : loss : 0.515024, loss_ce: 0.629886
+[15:23:08.994] val epoch 47 : f1_micro : 0.6406106672116688, f1_macro : 0.5306144282221794, tumor_f1 : 0.737194972378867, stroma_f1 : 0.5349873909726739, infla_f1 : 0.668514730940972, necr_f1 : 0.8563003327165332, other_f1 : 0.40177889806883677, acc_micro : 0.8563003327165332
+[15:23:10.575] train iteration 12673 : loss : 0.396490, loss_ce: 0.538955
+[15:23:30.274] train iteration 12723 : loss : 0.742495, loss_ce: 1.075033
+[15:23:50.364] train iteration 12773 : loss : 0.660513, loss_ce: 0.767285
+[15:24:10.420] train iteration 12823 : loss : 0.532145, loss_ce: 0.758999
+[15:24:30.405] train iteration 12873 : loss : 0.693448, loss_ce: 0.801378
+[15:24:50.569] train iteration 12923 : loss : 0.553548, loss_ce: 0.691819
+[15:24:59.139] val epoch 48 : f1_micro : 0.6795559482915061, f1_macro : 0.5644543362515313, tumor_f1 : 0.7398270687886647, stroma_f1 : 0.619602382183075, infla_f1 : 0.6863096462828773, necr_f1 : 0.871888701404844, other_f1 : 0.40179767539458616, acc_micro : 0.871888701404844
+[15:25:00.648] train iteration 12937 : loss : 0.664382, loss_ce: 0.947520
+[15:25:20.454] train iteration 12987 : loss : 0.558434, loss_ce: 0.674733
+[15:25:40.457] train iteration 13037 : loss : 0.597666, loss_ce: 0.658174
+[15:26:00.497] train iteration 13087 : loss : 0.525640, loss_ce: 0.621903
+[15:26:20.537] train iteration 13137 : loss : 0.501568, loss_ce: 0.708220
+[15:26:40.621] train iteration 13187 : loss : 0.654200, loss_ce: 0.907616
+[15:26:49.276] val epoch 49 : f1_micro : 0.6690656840801239, f1_macro : 0.5435724151985986, tumor_f1 : 0.7427046171256474, stroma_f1 : 0.5838317040886197, infla_f1 : 0.7103379964828491, necr_f1 : 0.8677311539649963, other_f1 : 0.400728668485369, acc_micro : 0.8677311539649963
+[15:26:50.819] train iteration 13201 : loss : 0.659957, loss_ce: 0.779860
+[15:27:10.615] train iteration 13251 : loss : 0.634042, loss_ce: 0.703970
+[15:27:30.492] train iteration 13301 : loss : 0.602616, loss_ce: 0.842420
+[15:27:50.566] train iteration 13351 : loss : 0.689258, loss_ce: 0.945030
+[15:28:10.587] train iteration 13401 : loss : 0.592330, loss_ce: 0.785814
+[15:28:30.757] train iteration 13451 : loss : 0.511319, loss_ce: 0.563644
+[15:28:39.428] val epoch 50 : f1_micro : 0.6614638311522347, f1_macro : 0.4942176640033722, tumor_f1 : 0.707790555698531, stroma_f1 : 0.6076954432896206, infla_f1 : 0.6396576975073133, necr_f1 : 0.8646808011191232, other_f1 : 0.401016480821584, acc_micro : 0.8646808011191232
+[15:28:40.847] train iteration 13465 : loss : 0.712019, loss_ce: 0.900615
+[15:29:00.573] train iteration 13515 : loss : 0.606083, loss_ce: 0.756646
+[15:29:20.478] train iteration 13565 : loss : 0.657588, loss_ce: 0.874753
+[15:29:40.551] train iteration 13615 : loss : 0.620263, loss_ce: 0.790716
+[15:30:00.612] train iteration 13665 : loss : 0.532652, loss_ce: 0.727408
+[15:30:20.636] train iteration 13715 : loss : 0.507116, loss_ce: 0.864443
+[15:30:29.204] val epoch 51 : f1_micro : 0.6504262579338891, f1_macro : 0.5062446487801415, tumor_f1 : 0.7029250179018293, stroma_f1 : 0.6001167935984475, infla_f1 : 0.6432012404714312, necr_f1 : 0.8602509839194161, other_f1 : 0.38432961755565237, acc_micro : 0.8602509839194161
+[15:30:30.752] train iteration 13729 : loss : 0.526325, loss_ce: 0.742618
+[15:30:50.494] train iteration 13779 : loss : 0.643937, loss_ce: 0.777680
+[15:31:10.451] train iteration 13829 : loss : 0.445204, loss_ce: 0.615875
+[15:31:30.462] train iteration 13879 : loss : 0.524869, loss_ce: 0.699457
+[15:31:50.526] train iteration 13929 : loss : 0.612453, loss_ce: 0.834283
+[15:32:10.684] train iteration 13979 : loss : 0.445181, loss_ce: 0.512634
+[15:32:19.256] val epoch 52 : f1_micro : 0.6215090709073203, f1_macro : 0.4992277707372393, tumor_f1 : 0.7355632058211735, stroma_f1 : 0.5122358293405601, infla_f1 : 0.6801171196358544, necr_f1 : 0.8486532015459878, other_f1 : 0.3841858037880489, acc_micro : 0.8486532015459878
+[15:32:20.771] train iteration 13993 : loss : 0.693910, loss_ce: 0.935889
+[15:32:40.473] train iteration 14043 : loss : 0.538102, loss_ce: 0.776064
+[15:33:00.516] train iteration 14093 : loss : 0.543129, loss_ce: 0.610180
+[15:33:20.524] train iteration 14143 : loss : 0.332189, loss_ce: 0.510267
+[15:33:40.588] train iteration 14193 : loss : 0.616181, loss_ce: 0.798259
+[15:34:00.612] train iteration 14243 : loss : 0.502020, loss_ce: 0.766093
+[15:34:09.281] val epoch 53 : f1_micro : 0.6604124818529401, f1_macro : 0.5237583986350468, tumor_f1 : 0.6974504462310246, stroma_f1 : 0.6104006320238113, infla_f1 : 0.6308073486600604, necr_f1 : 0.8642374745437077, other_f1 : 0.3945324144193104, acc_micro : 0.8642374745437077
+[15:34:10.774] train iteration 14257 : loss : 0.650242, loss_ce: 0.774476
+[15:34:30.505] train iteration 14307 : loss : 0.637864, loss_ce: 0.796664
+[15:34:50.463] train iteration 14357 : loss : 0.621774, loss_ce: 0.806987
+[15:35:10.557] train iteration 14407 : loss : 0.653020, loss_ce: 0.941775
+[15:35:30.597] train iteration 14457 : loss : 0.730614, loss_ce: 0.877469
+[15:35:50.705] train iteration 14507 : loss : 0.571362, loss_ce: 0.738022
+[15:35:59.282] val epoch 54 : f1_micro : 0.6591241700308663, f1_macro : 0.550368396299226, tumor_f1 : 0.735112937433379, stroma_f1 : 0.5598967634141445, infla_f1 : 0.7176215137754168, necr_f1 : 0.8637048814977918, other_f1 : 0.3985976502299309, acc_micro : 0.8637048814977918
+[15:36:00.807] train iteration 14521 : loss : 0.444740, loss_ce: 0.713745
+[15:36:20.512] train iteration 14571 : loss : 0.617866, loss_ce: 0.813036
+[15:36:40.415] train iteration 14621 : loss : 0.595011, loss_ce: 0.803128
+[15:37:00.533] train iteration 14671 : loss : 0.407312, loss_ce: 0.521534
+[15:37:20.520] train iteration 14721 : loss : 0.499311, loss_ce: 0.541045
+[15:37:40.518] train iteration 14771 : loss : 0.575052, loss_ce: 0.735958
+[15:37:49.041] val epoch 55 : f1_micro : 0.6422451713255474, f1_macro : 0.5206095203757286, tumor_f1 : 0.6992032187325614, stroma_f1 : 0.5761451149093253, infla_f1 : 0.62728650867939, necr_f1 : 0.8569345261369433, other_f1 : 0.3981890454888344, acc_micro : 0.8569345261369433
+[15:37:50.478] train iteration 14785 : loss : 0.515772, loss_ce: 0.683416
+[15:38:10.296] train iteration 14835 : loss : 0.366443, loss_ce: 0.510144
+[15:38:30.328] train iteration 14885 : loss : 0.495966, loss_ce: 0.658585
+[15:38:50.242] train iteration 14935 : loss : 0.384267, loss_ce: 0.498273
+[15:39:10.368] train iteration 14985 : loss : 0.516802, loss_ce: 0.768192
+[15:39:30.332] train iteration 15035 : loss : 0.389600, loss_ce: 0.599751
+[15:39:38.836] val epoch 56 : f1_micro : 0.6721871452672141, f1_macro : 0.5491461360028812, tumor_f1 : 0.7058374179261071, stroma_f1 : 0.6516773360116142, infla_f1 : 0.6045690796204976, necr_f1 : 0.8689122923782894, other_f1 : 0.38374890440276693, acc_micro : 0.8689122923782894
+[15:39:40.356] train iteration 15049 : loss : 0.431200, loss_ce: 0.458692
+[15:40:00.090] train iteration 15099 : loss : 0.487627, loss_ce: 0.564834
+[15:40:20.225] train iteration 15149 : loss : 0.626774, loss_ce: 0.745314
+[15:40:40.240] train iteration 15199 : loss : 0.638096, loss_ce: 0.897033
+[15:41:00.313] train iteration 15249 : loss : 0.877239, loss_ce: 1.366418
+[15:41:20.390] train iteration 15299 : loss : 0.744301, loss_ce: 1.111375
+[15:41:28.954] val epoch 57 : f1_micro : 0.6490581780672073, f1_macro : 0.5332686581781932, tumor_f1 : 0.7372202213321414, stroma_f1 : 0.5723434064005103, infla_f1 : 0.6451514565518924, necr_f1 : 0.8596630224159786, other_f1 : 0.39990604066822144, acc_micro : 0.8596630224159786
+[15:41:30.524] train iteration 15313 : loss : 0.577756, loss_ce: 0.674232
+[15:41:50.240] train iteration 15363 : loss : 0.557075, loss_ce: 0.792991
+[15:42:10.188] train iteration 15413 : loss : 0.615369, loss_ce: 0.878470
+[15:42:30.292] train iteration 15463 : loss : 0.552074, loss_ce: 0.640239
+[15:42:50.334] train iteration 15513 : loss : 0.692496, loss_ce: 0.917070
+[15:43:10.232] train iteration 15563 : loss : 0.531047, loss_ce: 0.645689
+[15:43:18.785] val epoch 58 : f1_micro : 0.6634064827646527, f1_macro : 0.5275492114680154, tumor_f1 : 0.7425965688058308, stroma_f1 : 0.586558174341917, infla_f1 : 0.6967522220553032, necr_f1 : 0.8653950137751443, other_f1 : 0.3809817284345627, acc_micro : 0.8653950137751443
+[15:43:20.279] train iteration 15577 : loss : 0.564533, loss_ce: 0.742654
+[15:43:39.979] train iteration 15627 : loss : 0.517130, loss_ce: 0.656308
+[15:43:59.916] train iteration 15677 : loss : 0.626266, loss_ce: 0.808386
+[15:44:20.033] train iteration 15727 : loss : 0.510747, loss_ce: 0.684854
+[15:44:40.004] train iteration 15777 : loss : 0.513647, loss_ce: 0.664549
+[15:44:59.899] train iteration 15827 : loss : 0.422022, loss_ce: 0.579201
+[15:45:08.564] val epoch 59 : f1_micro : 0.6553389004298619, f1_macro : 0.5279499292373657, tumor_f1 : 0.7192381961005074, stroma_f1 : 0.601082580430167, infla_f1 : 0.6524874988411155, necr_f1 : 0.8621787556580135, other_f1 : 0.3852789793163538, acc_micro : 0.8621787556580135
+[15:45:09.986] train iteration 15841 : loss : 0.390342, loss_ce: 0.422370
+[15:45:29.680] train iteration 15891 : loss : 0.445139, loss_ce: 0.585118
+[15:45:49.629] train iteration 15941 : loss : 0.553635, loss_ce: 0.623280
+[15:46:09.703] train iteration 15991 : loss : 0.578074, loss_ce: 0.764344
+[15:46:29.560] train iteration 16041 : loss : 0.636576, loss_ce: 0.823411
+[15:46:49.654] train iteration 16091 : loss : 0.394690, loss_ce: 0.556514
+[15:46:58.229] val epoch 60 : f1_micro : 0.6211259854691369, f1_macro : 0.47812722623348236, tumor_f1 : 0.7266667102064405, stroma_f1 : 0.5430460231644767, infla_f1 : 0.6171811058052948, necr_f1 : 0.8485148804528373, other_f1 : 0.4003006988703938, acc_micro : 0.8485148804528373
+[15:46:59.760] train iteration 16105 : loss : 0.533884, loss_ce: 0.781154
+[15:47:19.452] train iteration 16155 : loss : 0.501114, loss_ce: 0.692261
+[15:47:39.471] train iteration 16205 : loss : 0.541049, loss_ce: 0.705892
+[15:47:59.342] train iteration 16255 : loss : 0.522367, loss_ce: 0.659520
+[15:48:19.274] train iteration 16305 : loss : 0.531416, loss_ce: 0.611231
+[15:48:39.246] train iteration 16355 : loss : 0.547781, loss_ce: 0.874801
+[15:48:47.733] val epoch 61 : f1_micro : 0.623752202306475, f1_macro : 0.49283615393298014, tumor_f1 : 0.7511234517608371, stroma_f1 : 0.4985010123678616, infla_f1 : 0.6659785035465445, necr_f1 : 0.8495643905230931, other_f1 : 0.3256868896340685, acc_micro : 0.8495643905230931
+[15:48:49.183] train iteration 16369 : loss : 0.504138, loss_ce: 0.467325
+[15:49:08.903] train iteration 16419 : loss : 0.538312, loss_ce: 0.826245
+[15:49:28.828] train iteration 16469 : loss : 0.568612, loss_ce: 0.769490
+[15:49:48.769] train iteration 16519 : loss : 0.444981, loss_ce: 0.492150
+[15:50:08.781] train iteration 16569 : loss : 0.491808, loss_ce: 0.601166
+[15:50:28.762] train iteration 16619 : loss : 0.666467, loss_ce: 0.915879
+[15:50:37.352] val epoch 62 : f1_micro : 0.6402754528181893, f1_macro : 0.5008715689182281, tumor_f1 : 0.7258740429367337, stroma_f1 : 0.5530324392020702, infla_f1 : 0.6132545545697212, necr_f1 : 0.8561665713787079, other_f1 : 0.396141485444137, acc_micro : 0.8561665713787079
+[15:50:38.868] train iteration 16633 : loss : 0.720274, loss_ce: 0.895669
+[15:50:58.528] train iteration 16683 : loss : 0.569446, loss_ce: 0.743590
+[15:51:18.397] train iteration 16733 : loss : 0.568728, loss_ce: 0.706741
+[15:51:38.413] train iteration 16783 : loss : 0.361645, loss_ce: 0.447143
+[15:51:58.384] train iteration 16833 : loss : 0.527800, loss_ce: 0.740726
+[15:52:18.391] train iteration 16883 : loss : 0.428421, loss_ce: 0.490316
+[15:52:26.937] val epoch 63 : f1_micro : 0.6418616133076804, f1_macro : 0.5056123637727329, tumor_f1 : 0.7416499725409916, stroma_f1 : 0.5186802422893899, infla_f1 : 0.6393487964357648, necr_f1 : 0.8568161002227238, other_f1 : 0.3850084553871836, acc_micro : 0.8568161002227238
+[15:52:28.478] train iteration 16897 : loss : 0.545187, loss_ce: 0.785100
+[15:52:48.175] train iteration 16947 : loss : 0.540677, loss_ce: 0.689239
+[15:53:08.033] train iteration 16997 : loss : 0.639595, loss_ce: 0.779181
+[15:53:28.041] train iteration 17047 : loss : 0.493495, loss_ce: 0.592890
+[15:53:48.067] train iteration 17097 : loss : 0.453177, loss_ce: 0.506805
+[15:54:08.039] train iteration 17147 : loss : 0.490959, loss_ce: 0.602169
+[15:54:16.714] val epoch 64 : f1_micro : 0.6493118724652699, f1_macro : 0.4970628640481404, tumor_f1 : 0.7340866029262543, stroma_f1 : 0.555011142976582, infla_f1 : 0.5939718165567943, necr_f1 : 0.859838434628078, other_f1 : 0.39411747987781254, acc_micro : 0.859838434628078
+[15:54:18.252] train iteration 17161 : loss : 0.516848, loss_ce: 0.665133
+[15:54:37.935] train iteration 17211 : loss : 0.573125, loss_ce: 0.812354
+[15:54:57.829] train iteration 17261 : loss : 0.602114, loss_ce: 0.749870
+[15:55:17.899] train iteration 17311 : loss : 0.545663, loss_ce: 0.670546
+[15:55:37.868] train iteration 17361 : loss : 0.503483, loss_ce: 0.567919
+[15:55:57.879] train iteration 17411 : loss : 0.338696, loss_ce: 0.465570
+[15:56:06.634] val epoch 65 : f1_micro : 0.6474930569529533, f1_macro : 0.5266091333968299, tumor_f1 : 0.7265104992049081, stroma_f1 : 0.5690760335751942, infla_f1 : 0.6943294256925583, necr_f1 : 0.8590839207172394, other_f1 : 0.3522955916955003, acc_micro : 0.8590839207172394
+[15:56:08.126] train iteration 17425 : loss : 0.666429, loss_ce: 0.953603
+[15:56:27.792] train iteration 17475 : loss : 0.419193, loss_ce: 0.565708
+[15:56:47.736] train iteration 17525 : loss : 0.514930, loss_ce: 0.692302
+[15:57:07.752] train iteration 17575 : loss : 0.462715, loss_ce: 0.633037
+[15:57:27.734] train iteration 17625 : loss : 0.405978, loss_ce: 0.640256
+[15:57:47.729] train iteration 17675 : loss : 0.510259, loss_ce: 0.621386
+[15:57:56.401] val epoch 66 : f1_micro : 0.6588833566222873, f1_macro : 0.510768784476178, tumor_f1 : 0.7364339530467987, stroma_f1 : 0.5774041311815381, infla_f1 : 0.5914142749139241, necr_f1 : 0.863628374678748, other_f1 : 0.3902204133503671, acc_micro : 0.863628374678748
+[15:57:57.948] train iteration 17689 : loss : 0.402687, loss_ce: 0.540674
+[15:58:17.731] train iteration 17739 : loss : 0.669256, loss_ce: 0.937749
+[15:58:37.658] train iteration 17789 : loss : 0.506440, loss_ce: 0.685073
+[15:58:57.649] train iteration 17839 : loss : 0.453636, loss_ce: 0.490779
+[15:59:17.669] train iteration 17889 : loss : 0.682191, loss_ce: 1.031215
+[15:59:37.620] train iteration 17939 : loss : 0.586721, loss_ce: 0.679418
+[15:59:46.359] val epoch 67 : f1_micro : 0.6684325379984719, f1_macro : 0.5468249320983887, tumor_f1 : 0.7414500436612538, stroma_f1 : 0.5954582039266825, infla_f1 : 0.6766159289649555, necr_f1 : 0.8674101914678302, other_f1 : 0.39912332807268414, acc_micro : 0.8674101914678302
+[15:59:47.789] train iteration 17953 : loss : 0.597486, loss_ce: 0.778953
+[16:00:07.466] train iteration 18003 : loss : 0.681675, loss_ce: 0.981169
+[16:00:27.350] train iteration 18053 : loss : 0.565809, loss_ce: 0.747692
+[16:00:47.402] train iteration 18103 : loss : 0.557531, loss_ce: 0.783077
+[16:01:07.446] train iteration 18153 : loss : 0.523951, loss_ce: 0.555392
+[16:01:27.433] train iteration 18203 : loss : 0.597933, loss_ce: 0.764917
+[16:01:35.996] val epoch 68 : f1_micro : 0.6787322631904057, f1_macro : 0.5218460474695478, tumor_f1 : 0.7425367917333331, stroma_f1 : 0.6327276251145771, infla_f1 : 0.6010600392307553, necr_f1 : 0.8715568142277854, other_f1 : 0.3882170372775623, acc_micro : 0.8715568142277854
+[16:01:37.433] train iteration 18217 : loss : 0.669839, loss_ce: 0.969727
+[16:01:57.166] train iteration 18267 : loss : 0.366449, loss_ce: 0.463264
+[16:02:17.101] train iteration 18317 : loss : 0.588977, loss_ce: 0.644128
+[16:02:37.173] train iteration 18367 : loss : 0.341058, loss_ce: 0.517361
+[16:02:57.123] train iteration 18417 : loss : 0.367922, loss_ce: 0.391656
+[16:03:17.072] train iteration 18467 : loss : 0.595413, loss_ce: 0.751372
+[16:03:25.710] val epoch 69 : f1_micro : 0.6635179775101798, f1_macro : 0.5229232055800301, tumor_f1 : 0.7337373942136765, stroma_f1 : 0.6067010590008327, infla_f1 : 0.5922266561496404, necr_f1 : 0.8654362261295319, other_f1 : 0.4093973182014971, acc_micro : 0.8654362261295319
+[16:03:27.150] train iteration 18481 : loss : 0.464315, loss_ce: 0.623486
+[16:03:46.853] train iteration 18531 : loss : 0.554560, loss_ce: 0.667436
+[16:04:06.877] train iteration 18581 : loss : 0.382659, loss_ce: 0.499848
+[16:04:26.883] train iteration 18631 : loss : 0.454919, loss_ce: 0.643553
+[16:04:46.851] train iteration 18681 : loss : 0.428596, loss_ce: 0.503577
+[16:05:06.868] train iteration 18731 : loss : 0.533162, loss_ce: 0.640590
+[16:05:15.582] val epoch 70 : f1_micro : 0.6119576532925878, f1_macro : 0.49519496836832594, tumor_f1 : 0.7222492269107273, stroma_f1 : 0.5266436406943414, infla_f1 : 0.6032520149435315, necr_f1 : 0.8448609922613416, other_f1 : 0.39826184923627544, acc_micro : 0.8448609922613416
+[16:05:17.086] train iteration 18745 : loss : 0.420061, loss_ce: 0.573308
+[16:05:36.765] train iteration 18795 : loss : 0.674499, loss_ce: 0.894556
+[16:05:56.763] train iteration 18845 : loss : 0.561098, loss_ce: 0.885801
+[16:06:16.819] train iteration 18895 : loss : 0.619833, loss_ce: 0.775905
+[16:06:36.880] train iteration 18945 : loss : 0.522524, loss_ce: 0.788799
+[16:06:56.847] train iteration 18995 : loss : 0.557816, loss_ce: 0.710802
+[16:07:05.482] val epoch 71 : f1_micro : 0.6356291664498193, f1_macro : 0.4988785279648645, tumor_f1 : 0.7489304223230907, stroma_f1 : 0.5458828629260617, infla_f1 : 0.5852902010083199, necr_f1 : 0.8543351079736438, other_f1 : 0.4109453343387161, acc_micro : 0.8543351079736438
+[16:07:07.012] train iteration 19009 : loss : 0.522141, loss_ce: 0.686665
+[16:07:26.756] train iteration 19059 : loss : 0.677538, loss_ce: 0.995783
+[16:07:46.672] train iteration 19109 : loss : 0.487158, loss_ce: 0.750477
+[16:08:06.771] train iteration 19159 : loss : 0.332850, loss_ce: 0.454762
+[16:08:26.752] train iteration 19209 : loss : 0.417715, loss_ce: 0.459846
+[16:08:46.843] train iteration 19259 : loss : 0.799836, loss_ce: 1.138123
+[16:08:55.380] val epoch 72 : f1_micro : 0.6292122219290052, f1_macro : 0.48789423065526144, tumor_f1 : 0.758612219776426, stroma_f1 : 0.48449919732021435, infla_f1 : 0.6893614468696926, necr_f1 : 0.851785672562463, other_f1 : 0.3808972643954413, acc_micro : 0.851785672562463
+[16:08:56.782] train iteration 19273 : loss : 0.543904, loss_ce: 0.665145
+[16:09:16.510] train iteration 19323 : loss : 0.634088, loss_ce: 1.039140
+[16:09:36.485] train iteration 19373 : loss : 0.411146, loss_ce: 0.648840
+[16:09:56.508] train iteration 19423 : loss : 0.383703, loss_ce: 0.446869
+[16:10:16.550] train iteration 19473 : loss : 0.380548, loss_ce: 0.522090
+[16:10:36.431] train iteration 19523 : loss : 0.581021, loss_ce: 0.775030
+[16:10:44.997] val epoch 73 : f1_micro : 0.6688310950994492, f1_macro : 0.5253988355398178, tumor_f1 : 0.7498311102390289, stroma_f1 : 0.5868476474923747, infla_f1 : 0.5932458852018628, necr_f1 : 0.8675892608506339, other_f1 : 0.4085713915795038, acc_micro : 0.8675892608506339
+[16:10:46.506] train iteration 19537 : loss : 0.537766, loss_ce: 0.630040
+[16:11:06.306] train iteration 19587 : loss : 0.484019, loss_ce: 0.674278
+[16:11:26.204] train iteration 19637 : loss : 0.584685, loss_ce: 0.720272
+[16:11:46.264] train iteration 19687 : loss : 0.564180, loss_ce: 0.855250
+[16:12:06.207] train iteration 19737 : loss : 0.560918, loss_ce: 0.749428
+[16:12:26.283] train iteration 19787 : loss : 0.522598, loss_ce: 0.617512
+[16:12:34.979] val epoch 74 : f1_micro : 0.6623696301664624, f1_macro : 0.5368761069008282, tumor_f1 : 0.716691112944058, stroma_f1 : 0.6041172317096165, infla_f1 : 0.6101365376796041, necr_f1 : 0.8649872498852866, other_f1 : 0.3904291040131024, acc_micro : 0.8649872498852866
+[16:12:36.497] train iteration 19801 : loss : 0.404870, loss_ce: 0.541546
+[16:12:56.213] train iteration 19851 : loss : 0.576187, loss_ce: 0.757342
+[16:13:16.165] train iteration 19901 : loss : 0.415317, loss_ce: 0.561716
+[16:13:36.254] train iteration 19951 : loss : 0.500835, loss_ce: 0.758254
+[16:13:56.161] train iteration 20001 : loss : 0.584047, loss_ce: 0.703429
+[16:14:16.176] train iteration 20051 : loss : 0.711026, loss_ce: 0.940530
+[16:14:24.789] val epoch 75 : f1_micro : 0.682857871055603, f1_macro : 0.5447254755667278, tumor_f1 : 0.7532091928379876, stroma_f1 : 0.6011730848778305, infla_f1 : 0.6699665383036647, necr_f1 : 0.8731718191078731, other_f1 : 0.40143207980768886, acc_micro : 0.8731718191078731
+[16:14:26.279] train iteration 20065 : loss : 0.470569, loss_ce: 0.522986
+[16:14:45.973] train iteration 20115 : loss : 0.413261, loss_ce: 0.392480
+[16:15:05.930] train iteration 20165 : loss : 0.496792, loss_ce: 0.673382
+[16:15:25.875] train iteration 20215 : loss : 0.653663, loss_ce: 0.906610
+[16:15:45.979] train iteration 20265 : loss : 0.350788, loss_ce: 0.442956
+[16:16:05.865] train iteration 20315 : loss : 0.655158, loss_ce: 0.867986
+[16:16:14.553] val epoch 76 : f1_micro : 0.6801552793809346, f1_macro : 0.5611628932612283, tumor_f1 : 0.750832315002169, stroma_f1 : 0.6168109370129449, infla_f1 : 0.6641956397465297, necr_f1 : 0.8721136195319039, other_f1 : 0.4080259736095156, acc_micro : 0.8721136195319039
+[16:16:16.067] train iteration 20329 : loss : 0.534759, loss_ce: 0.664218
+[16:16:35.743] train iteration 20379 : loss : 0.702741, loss_ce: 0.906925
+[16:16:55.699] train iteration 20429 : loss : 0.588171, loss_ce: 0.743644
+[16:17:15.744] train iteration 20479 : loss : 0.374737, loss_ce: 0.496502
+[16:17:35.714] train iteration 20529 : loss : 0.518730, loss_ce: 0.712253
+[16:17:55.674] train iteration 20579 : loss : 0.713374, loss_ce: 1.000065
+[16:18:04.288] val epoch 77 : f1_micro : 0.6700612136295864, f1_macro : 0.5049676299095154, tumor_f1 : 0.7545592359134129, stroma_f1 : 0.5921581517904997, infla_f1 : 0.6429664726768222, necr_f1 : 0.8680633476802281, other_f1 : 0.39995137814964565, acc_micro : 0.8680633476802281
+[16:18:05.793] train iteration 20593 : loss : 0.402324, loss_ce: 0.592501
+[16:18:25.500] train iteration 20643 : loss : 0.519454, loss_ce: 0.618669
+[16:18:45.370] train iteration 20693 : loss : 0.508344, loss_ce: 0.695500
+[16:19:05.386] train iteration 20743 : loss : 0.455205, loss_ce: 0.611601
+[16:19:25.383] train iteration 20793 : loss : 0.636082, loss_ce: 0.976125
+[16:19:45.400] train iteration 20843 : loss : 0.524463, loss_ce: 0.748045
+[16:19:54.015] val epoch 78 : f1_micro : 0.6527158894709179, f1_macro : 0.4933627279741423, tumor_f1 : 0.7308522824730191, stroma_f1 : 0.6006661100046975, infla_f1 : 0.599022028701646, necr_f1 : 0.8611478635243007, other_f1 : 0.4003258411373411, acc_micro : 0.8611478635243007
+[16:19:55.525] train iteration 20857 : loss : 0.478681, loss_ce: 0.620569
+[16:20:15.240] train iteration 20907 : loss : 0.474564, loss_ce: 0.626509
+[16:20:35.140] train iteration 20957 : loss : 0.335386, loss_ce: 0.522677
+[16:20:55.146] train iteration 21007 : loss : 0.590475, loss_ce: 0.678397
+[16:21:15.193] train iteration 21057 : loss : 0.661872, loss_ce: 0.900661
+[16:21:35.168] train iteration 21107 : loss : 0.461559, loss_ce: 0.624484
+[16:21:43.795] val epoch 79 : f1_micro : 0.6682225082601819, f1_macro : 0.512772224843502, tumor_f1 : 0.7343238166400364, stroma_f1 : 0.6099889714803014, infla_f1 : 0.5895668917468616, necr_f1 : 0.8673262085233416, other_f1 : 0.38672326664839474, acc_micro : 0.8673262085233416
+[16:21:45.249] train iteration 21121 : loss : 0.328522, loss_ce: 0.410485
+[16:22:04.926] train iteration 21171 : loss : 0.421111, loss_ce: 0.581978
+[16:22:24.856] train iteration 21221 : loss : 0.513620, loss_ce: 0.651275
+[16:22:44.872] train iteration 21271 : loss : 0.474878, loss_ce: 0.550929
+[16:23:04.844] train iteration 21321 : loss : 0.406572, loss_ce: 0.524091
+[16:23:24.822] train iteration 21371 : loss : 0.400435, loss_ce: 0.553803
+[16:23:33.547] val epoch 80 : f1_micro : 0.6119271027190345, f1_macro : 0.46571579362664905, tumor_f1 : 0.7244668624230793, stroma_f1 : 0.49862306671483175, infla_f1 : 0.5897191060440881, necr_f1 : 0.8448251187801361, other_f1 : 0.4040114757205759, acc_micro : 0.8448251187801361
+[16:23:34.983] train iteration 21385 : loss : 0.399647, loss_ce: 0.629734
+[16:23:54.681] train iteration 21435 : loss : 0.582923, loss_ce: 0.734574
+[16:24:14.580] train iteration 21485 : loss : 0.488673, loss_ce: 0.687524
+[16:24:34.551] train iteration 21535 : loss : 0.557435, loss_ce: 0.616367
+[16:24:54.598] train iteration 21585 : loss : 0.559176, loss_ce: 0.651584
+[16:25:14.503] train iteration 21635 : loss : 0.491604, loss_ce: 0.680969
+[16:25:23.209] val epoch 81 : f1_micro : 0.6112662362200874, f1_macro : 0.4624887534550258, tumor_f1 : 0.72955450628485, stroma_f1 : 0.4689743811530726, infla_f1 : 0.5681415647268295, necr_f1 : 0.8446040792124612, other_f1 : 0.41047101082014187, acc_micro : 0.8446040792124612
+[16:25:24.698] train iteration 21649 : loss : 0.507209, loss_ce: 0.768002
+[16:25:44.404] train iteration 21699 : loss : 0.469918, loss_ce: 0.598181
+[16:26:04.322] train iteration 21749 : loss : 0.423458, loss_ce: 0.604388
+[16:26:24.317] train iteration 21799 : loss : 0.673814, loss_ce: 0.883489
+[16:26:44.361] train iteration 21849 : loss : 0.595346, loss_ce: 0.936080
+[16:27:04.257] train iteration 21899 : loss : 0.561588, loss_ce: 0.807955
+[16:27:12.931] val epoch 82 : f1_micro : 0.6914964275700706, f1_macro : 0.5838279149362019, tumor_f1 : 0.759270687188421, stroma_f1 : 0.615251365516867, infla_f1 : 0.6307632327079773, necr_f1 : 0.8766291098935264, other_f1 : 0.40493671413839494, acc_micro : 0.8766291098935264
+[16:27:14.486] train iteration 21913 : loss : 0.297017, loss_ce: 0.400653
+[16:27:34.190] train iteration 21963 : loss : 0.437837, loss_ce: 0.503616
+[16:27:54.247] train iteration 22013 : loss : 0.505179, loss_ce: 0.468697
+[16:28:14.273] train iteration 22063 : loss : 0.489806, loss_ce: 0.598883
+[16:28:34.186] train iteration 22113 : loss : 0.565220, loss_ce: 0.738201
+[16:28:54.230] train iteration 22163 : loss : 0.581434, loss_ce: 0.719369
+[16:29:02.752] val epoch 83 : f1_micro : 0.6822056898048946, f1_macro : 0.5690064951777458, tumor_f1 : 0.7305172362497875, stroma_f1 : 0.6547944886343819, infla_f1 : 0.5652658278122544, necr_f1 : 0.8729262394564492, other_f1 : 0.3985183197738869, acc_micro : 0.8729262394564492
+[16:29:04.232] train iteration 22177 : loss : 0.460204, loss_ce: 0.505868
+[16:29:24.026] train iteration 22227 : loss : 0.567082, loss_ce: 0.678073
+[16:29:44.018] train iteration 22277 : loss : 0.536015, loss_ce: 0.674018
+[16:30:03.956] train iteration 22327 : loss : 0.611365, loss_ce: 0.772839
+[16:30:24.019] train iteration 22377 : loss : 0.502996, loss_ce: 0.770173
+[16:30:44.068] train iteration 22427 : loss : 0.451032, loss_ce: 0.597214
+[16:30:52.739] val epoch 84 : f1_micro : 0.6778904987233025, f1_macro : 0.57187391604696, tumor_f1 : 0.7462521067687443, stroma_f1 : 0.6052933292729514, infla_f1 : 0.6089498315538678, necr_f1 : 0.8711797382150378, other_f1 : 0.39422447683422696, acc_micro : 0.8711797382150378
+[16:30:54.192] train iteration 22441 : loss : 0.227100, loss_ce: 0.348771
+[16:31:13.873] train iteration 22491 : loss : 0.649089, loss_ce: 0.752196
+[16:31:33.690] train iteration 22541 : loss : 0.515725, loss_ce: 0.700335
+[16:31:53.865] train iteration 22591 : loss : 0.418992, loss_ce: 0.580237
+[16:32:13.762] train iteration 22641 : loss : 0.729192, loss_ce: 1.062124
+[16:32:33.779] train iteration 22691 : loss : 0.734739, loss_ce: 1.143549
+[16:32:42.315] val epoch 85 : f1_micro : 0.652138780270304, f1_macro : 0.5386518112250737, tumor_f1 : 0.7173260237489428, stroma_f1 : 0.6192855324063983, infla_f1 : 0.5840962648923907, necr_f1 : 0.8608786676611219, other_f1 : 0.40845154066170963, acc_micro : 0.8608786676611219
+[16:32:43.872] train iteration 22705 : loss : 0.540527, loss_ce: 0.652707
+[16:33:03.573] train iteration 22755 : loss : 0.600665, loss_ce: 0.880897
+[16:33:23.590] train iteration 22805 : loss : 0.435487, loss_ce: 0.569577
+[16:33:43.697] train iteration 22855 : loss : 0.436370, loss_ce: 0.504373
+[16:34:03.570] train iteration 22905 : loss : 0.515589, loss_ce: 0.606628
+[16:34:23.611] train iteration 22955 : loss : 0.626066, loss_ce: 0.747934
+[16:34:32.355] val epoch 86 : f1_micro : 0.6573599619524819, f1_macro : 0.5137212766068322, tumor_f1 : 0.7356564636741366, stroma_f1 : 0.5856219897312778, infla_f1 : 0.6142118956361499, necr_f1 : 0.862989434174129, other_f1 : 0.4237067927606404, acc_micro : 0.862989434174129
+[16:34:33.845] train iteration 22969 : loss : 0.432929, loss_ce: 0.462565
+[16:34:53.535] train iteration 23019 : loss : 0.530228, loss_ce: 0.598682
+[16:35:13.559] train iteration 23069 : loss : 0.594403, loss_ce: 0.758155
+[16:35:33.575] train iteration 23119 : loss : 0.580318, loss_ce: 0.887734
+[16:35:53.571] train iteration 23169 : loss : 0.420276, loss_ce: 0.628654
+[16:36:13.544] train iteration 23219 : loss : 0.542093, loss_ce: 0.722036
+[16:36:22.245] val epoch 87 : f1_micro : 0.6688705853053502, f1_macro : 0.5535734125546047, tumor_f1 : 0.7232369844402585, stroma_f1 : 0.6175036366496768, infla_f1 : 0.6072723918727466, necr_f1 : 0.8675764458520072, other_f1 : 0.40945218433625996, acc_micro : 0.8675764458520072
+[16:36:23.758] train iteration 23233 : loss : 0.507463, loss_ce: 0.715308
+[16:36:43.482] train iteration 23283 : loss : 0.512976, loss_ce: 0.661536
+[16:37:03.479] train iteration 23333 : loss : 0.484134, loss_ce: 0.704543
+[16:37:23.491] train iteration 23383 : loss : 0.563416, loss_ce: 0.794616
+[16:37:43.510] train iteration 23433 : loss : 0.434511, loss_ce: 0.565672
+[16:38:03.679] train iteration 23483 : loss : 0.445058, loss_ce: 0.641003
+[16:38:12.264] val epoch 88 : f1_micro : 0.6315470444304603, f1_macro : 0.4963630054678236, tumor_f1 : 0.7476281140531812, stroma_f1 : 0.5017124148351806, infla_f1 : 0.6834365305091653, necr_f1 : 0.8526560408728463, other_f1 : 0.3926891620670046, acc_micro : 0.8526560408728463
+[16:38:13.743] train iteration 23497 : loss : 0.345083, loss_ce: 0.413035
+[16:38:33.441] train iteration 23547 : loss : 0.532460, loss_ce: 0.630286
+[16:38:53.396] train iteration 23597 : loss : 0.386521, loss_ce: 0.440740
+[16:39:13.461] train iteration 23647 : loss : 0.558882, loss_ce: 0.757982
+[16:39:33.486] train iteration 23697 : loss : 0.596222, loss_ce: 0.947804
+[16:39:53.706] train iteration 23747 : loss : 0.676898, loss_ce: 0.848545
+[16:40:02.253] val epoch 89 : f1_micro : 0.600693268435342, f1_macro : 0.4629662867103304, tumor_f1 : 0.7164365734372821, stroma_f1 : 0.5258571393787861, infla_f1 : 0.5433675015478262, necr_f1 : 0.8403518029621669, other_f1 : 0.39267727200474056, acc_micro : 0.8403518029621669
+[16:40:03.741] train iteration 23761 : loss : 0.441678, loss_ce: 0.553852
+[16:40:23.451] train iteration 23811 : loss : 0.719067, loss_ce: 0.939059
+[16:40:43.547] train iteration 23861 : loss : 0.427388, loss_ce: 0.595326
+[16:41:03.554] train iteration 23911 : loss : 0.583701, loss_ce: 0.699911
+[16:41:23.619] train iteration 23961 : loss : 0.358787, loss_ce: 0.472246
+[16:41:43.661] train iteration 24011 : loss : 0.455896, loss_ce: 0.618918
+[16:41:52.256] val epoch 90 : f1_micro : 0.6750397448028836, f1_macro : 0.5380608567169735, tumor_f1 : 0.744450073157038, stroma_f1 : 0.6047806806454901, infla_f1 : 0.6682975717953273, necr_f1 : 0.8700431287288666, other_f1 : 0.3959004087207307, acc_micro : 0.8700431287288666
+[16:41:53.881] train iteration 24025 : loss : 0.468165, loss_ce: 0.579306
+[16:42:13.600] train iteration 24075 : loss : 0.415084, loss_ce: 0.622510
+[16:42:33.602] train iteration 24125 : loss : 0.372921, loss_ce: 0.489058
+[16:42:53.655] train iteration 24175 : loss : 0.497252, loss_ce: 0.673901
+[16:43:13.746] train iteration 24225 : loss : 0.384675, loss_ce: 0.570741
+[16:43:33.823] train iteration 24275 : loss : 0.367203, loss_ce: 0.375479
+[16:43:42.479] val epoch 91 : f1_micro : 0.6782472112349102, f1_macro : 0.5458043728555951, tumor_f1 : 0.7448248011725289, stroma_f1 : 0.6077839822641441, infla_f1 : 0.5884001350828579, necr_f1 : 0.8713377458708627, other_f1 : 0.41196283764605013, acc_micro : 0.8713377458708627
+[16:43:44.054] train iteration 24289 : loss : 0.378671, loss_ce: 0.517054
+[16:44:03.816] train iteration 24339 : loss : 0.602520, loss_ce: 0.740776
+[16:44:23.948] train iteration 24389 : loss : 0.449693, loss_ce: 0.562159
+[16:44:43.983] train iteration 24439 : loss : 0.560667, loss_ce: 0.705870
+[16:45:04.114] train iteration 24489 : loss : 0.467731, loss_ce: 0.583974
+[16:45:24.085] train iteration 24539 : loss : 0.449079, loss_ce: 0.495878
+[16:45:32.772] val epoch 92 : f1_micro : 0.6498190271002906, f1_macro : 0.5164998822978565, tumor_f1 : 0.7456687263080052, stroma_f1 : 0.5502893860851016, infla_f1 : 0.5916020359311785, necr_f1 : 0.859979259116309, other_f1 : 0.4047299525035279, acc_micro : 0.859979259116309
+[16:45:34.288] train iteration 24553 : loss : 0.581377, loss_ce: 0.596776
+[16:45:54.064] train iteration 24603 : loss : 0.658535, loss_ce: 0.882960
+[16:46:14.046] train iteration 24653 : loss : 0.401103, loss_ce: 0.519319
+[16:46:34.226] train iteration 24703 : loss : 0.626637, loss_ce: 0.940997
+[16:46:54.351] train iteration 24753 : loss : 0.500927, loss_ce: 0.754942
+[16:47:14.460] train iteration 24803 : loss : 0.401938, loss_ce: 0.481774
+[16:47:22.981] val epoch 93 : f1_micro : 0.6612957503114428, f1_macro : 0.5011418419224876, tumor_f1 : 0.7470280315194812, stroma_f1 : 0.5760761904114459, infla_f1 : 0.5636371497863105, necr_f1 : 0.8645715160029275, other_f1 : 0.3996457638485091, acc_micro : 0.8645715160029275
+[16:47:24.457] train iteration 24817 : loss : 0.666421, loss_ce: 0.889826
+[16:47:44.221] train iteration 24867 : loss : 0.330596, loss_ce: 0.423273
+[16:48:04.320] train iteration 24917 : loss : 0.553809, loss_ce: 0.517532
+[16:48:24.357] train iteration 24967 : loss : 0.559189, loss_ce: 0.667279
+[16:48:44.501] train iteration 25017 : loss : 0.504351, loss_ce: 0.531579
+[16:49:04.458] train iteration 25067 : loss : 0.445642, loss_ce: 0.574777
+[16:49:12.984] val epoch 94 : f1_micro : 0.6327005103230476, f1_macro : 0.5056708066591195, tumor_f1 : 0.7206421068736485, stroma_f1 : 0.5568531772920063, infla_f1 : 0.5921872556209564, necr_f1 : 0.8531564559255328, other_f1 : 0.4254746865886513, acc_micro : 0.8531564559255328
+[16:49:14.355] train iteration 25081 : loss : 0.435015, loss_ce: 0.505926
+[16:49:34.149] train iteration 25131 : loss : 0.483962, loss_ce: 0.579433
+[16:49:54.068] train iteration 25181 : loss : 0.535745, loss_ce: 0.827906
+[16:50:14.153] train iteration 25231 : loss : 0.291044, loss_ce: 0.391979
+[16:50:34.218] train iteration 25281 : loss : 0.596324, loss_ce: 0.853322
+[16:50:54.291] train iteration 25331 : loss : 0.557742, loss_ce: 0.634180
+[16:51:03.039] val epoch 95 : f1_micro : 0.6420439864907946, f1_macro : 0.5134389405804021, tumor_f1 : 0.7470470879759107, stroma_f1 : 0.5505870788225106, infla_f1 : 0.5734798998704979, necr_f1 : 0.8568564525672367, other_f1 : 0.3973324608024476, acc_micro : 0.8568564525672367
+[16:51:04.529] train iteration 25345 : loss : 0.477908, loss_ce: 0.562279
+[16:51:24.224] train iteration 25395 : loss : 0.447952, loss_ce: 0.545342
+[16:51:44.283] train iteration 25445 : loss : 0.463784, loss_ce: 0.529181
+[16:52:04.361] train iteration 25495 : loss : 0.642232, loss_ce: 0.850423
+[16:52:24.399] train iteration 25545 : loss : 0.508891, loss_ce: 0.589008
+[16:52:44.500] train iteration 25595 : loss : 0.473577, loss_ce: 0.660098
+[16:52:53.237] val epoch 96 : f1_micro : 0.6689548407282148, f1_macro : 0.511914678982326, tumor_f1 : 0.7519033295767648, stroma_f1 : 0.5672916227652293, infla_f1 : 0.6001420127493995, necr_f1 : 0.8676160190786634, other_f1 : 0.4032932280429772, acc_micro : 0.8676160190786634
+[16:52:54.753] train iteration 25609 : loss : 0.527533, loss_ce: 0.797902
+[16:53:14.443] train iteration 25659 : loss : 0.509459, loss_ce: 0.556441
+[16:53:34.495] train iteration 25709 : loss : 0.540538, loss_ce: 0.767249
+[16:53:54.803] train iteration 25759 : loss : 0.478949, loss_ce: 0.617860
+[16:54:14.697] train iteration 25809 : loss : 0.523526, loss_ce: 0.641068
+[16:54:34.797] train iteration 25859 : loss : 0.566595, loss_ce: 0.876343
+[16:54:43.418] val epoch 97 : f1_micro : 0.6930621670825141, f1_macro : 0.5922887261424746, tumor_f1 : 0.7468987213713782, stroma_f1 : 0.6512780657836369, infla_f1 : 0.5981682645423072, necr_f1 : 0.877254034791674, other_f1 : 0.41156709420361687, acc_micro : 0.877254034791674
+[16:54:44.912] train iteration 25873 : loss : 0.292177, loss_ce: 0.368407
+[16:55:04.762] train iteration 25923 : loss : 0.470196, loss_ce: 0.670265
+[16:55:24.666] train iteration 25973 : loss : 0.513738, loss_ce: 0.703128
+[16:55:44.769] train iteration 26023 : loss : 0.456748, loss_ce: 0.551694
+[16:56:04.841] train iteration 26073 : loss : 0.403243, loss_ce: 0.402469
+[16:56:24.970] train iteration 26123 : loss : 0.438814, loss_ce: 0.499310
+[16:56:33.546] val epoch 98 : f1_micro : 0.6784954092332295, f1_macro : 0.5570102270160403, tumor_f1 : 0.7486734773431506, stroma_f1 : 0.6191586910613945, infla_f1 : 0.6669430541140693, necr_f1 : 0.8714275913579124, other_f1 : 0.39875486493110657, acc_micro : 0.8714275913579124
+[16:56:35.096] train iteration 26137 : loss : 0.367426, loss_ce: 0.528234
+[16:56:54.888] train iteration 26187 : loss : 0.455803, loss_ce: 0.578508
+[16:57:15.068] train iteration 26237 : loss : 0.581625, loss_ce: 0.662873
+[16:57:34.931] train iteration 26287 : loss : 0.525524, loss_ce: 0.711770
+[16:57:55.104] train iteration 26337 : loss : 0.523311, loss_ce: 0.724762
+[16:58:15.218] train iteration 26387 : loss : 0.384070, loss_ce: 0.573978
+[16:58:23.768] val epoch 99 : f1_micro : 0.6382466363055366, f1_macro : 0.515892990465675, tumor_f1 : 0.7068777616534915, stroma_f1 : 0.5938935886536326, infla_f1 : 0.5575146398374012, necr_f1 : 0.8553362701620374, other_f1 : 0.41690077226875083, acc_micro : 0.8553362701620374
+[16:58:24.638] save model to ./logs/frac_1.0/fold_3/epoch_99.pth
+[16:58:26.141] train iteration 26401 : loss : 0.540757, loss_ce: 0.766494
+[16:58:45.820] train iteration 26451 : loss : 0.433173, loss_ce: 0.608439
+[16:59:05.790] train iteration 26501 : loss : 0.462514, loss_ce: 0.512330
+[16:59:25.966] train iteration 26551 : loss : 0.426189, loss_ce: 0.613534
+[16:59:46.084] train iteration 26601 : loss : 0.684241, loss_ce: 1.020352
+[17:00:06.202] train iteration 26651 : loss : 0.444075, loss_ce: 0.624298
+[17:00:14.729] val epoch 100 : f1_micro : 0.6539841081414904, f1_macro : 0.5539978231702533, tumor_f1 : 0.7297593099730355, stroma_f1 : 0.5992080867290497, infla_f1 : 0.6344643841896739, necr_f1 : 0.8616205326148442, other_f1 : 0.4014711252280644, acc_micro : 0.8616205326148442
+[17:00:16.233] train iteration 26665 : loss : 0.507030, loss_ce: 0.758035
+[17:00:36.001] train iteration 26715 : loss : 0.422621, loss_ce: 0.561440
+[17:00:56.039] train iteration 26765 : loss : 0.498578, loss_ce: 0.747389
+[17:01:16.103] train iteration 26815 : loss : 0.378143, loss_ce: 0.511481
+[17:01:36.334] train iteration 26865 : loss : 0.680071, loss_ce: 0.910498
+[17:01:56.414] train iteration 26915 : loss : 0.359015, loss_ce: 0.462538
+[17:02:05.048] val epoch 101 : f1_micro : 0.6679082023245948, f1_macro : 0.5349498348576682, tumor_f1 : 0.7413107518638883, stroma_f1 : 0.5972999478025096, infla_f1 : 0.6464538787092481, necr_f1 : 0.867209153515952, other_f1 : 0.41609586090115563, acc_micro : 0.867209153515952
+[17:02:06.560] train iteration 26929 : loss : 0.390371, loss_ce: 0.382002
+[17:02:26.351] train iteration 26979 : loss : 0.573329, loss_ce: 0.710986
+[17:02:46.451] train iteration 27029 : loss : 0.385003, loss_ce: 0.504544
+[17:03:06.506] train iteration 27079 : loss : 0.517469, loss_ce: 0.770686
+[17:03:26.558] train iteration 27129 : loss : 0.426478, loss_ce: 0.555051
+[17:03:46.702] train iteration 27179 : loss : 0.507377, loss_ce: 0.628887
+[17:03:55.280] val epoch 102 : f1_micro : 0.6202219894954136, f1_macro : 0.497624325965132, tumor_f1 : 0.7392256004469735, stroma_f1 : 0.4855300432869366, infla_f1 : 0.5842584861176354, necr_f1 : 0.848163515329361, other_f1 : 0.40762806151594433, acc_micro : 0.848163515329361
+[17:03:56.853] train iteration 27193 : loss : 0.441722, loss_ce: 0.577005
+[17:04:16.677] train iteration 27243 : loss : 0.494802, loss_ce: 0.627608
+[17:04:36.654] train iteration 27293 : loss : 0.544972, loss_ce: 0.536409
+[17:04:56.832] train iteration 27343 : loss : 0.431597, loss_ce: 0.647179
+[17:05:16.892] train iteration 27393 : loss : 0.453519, loss_ce: 0.707368
+[17:05:36.972] train iteration 27443 : loss : 0.571611, loss_ce: 0.867413
+[17:05:45.830] val epoch 103 : f1_micro : 0.6793483708586011, f1_macro : 0.5265932923981121, tumor_f1 : 0.7621335110494069, stroma_f1 : 0.6082337147423199, infla_f1 : 0.5875958842890603, necr_f1 : 0.8717630846159798, other_f1 : 0.40242858776556595, acc_micro : 0.8717630846159798
+[17:05:47.371] train iteration 27457 : loss : 0.418018, loss_ce: 0.459782
+[17:06:07.076] train iteration 27507 : loss : 0.260413, loss_ce: 0.369240
+[17:06:27.204] train iteration 27557 : loss : 0.461763, loss_ce: 0.616566
+[17:06:47.288] train iteration 27607 : loss : 0.485918, loss_ce: 0.572025
+[17:07:07.340] train iteration 27657 : loss : 0.479389, loss_ce: 0.594384
+[17:07:27.573] train iteration 27707 : loss : 0.465481, loss_ce: 0.672760
+[17:07:36.230] val epoch 104 : f1_micro : 0.6588064368282046, f1_macro : 0.544909164841686, tumor_f1 : 0.7238364262240273, stroma_f1 : 0.6061221000605396, infla_f1 : 0.5642060509749821, necr_f1 : 0.8635787112372262, other_f1 : 0.3927979209194226, acc_micro : 0.8635787112372262
+[17:07:37.819] train iteration 27721 : loss : 0.321545, loss_ce: 0.438182
+[17:07:57.542] train iteration 27771 : loss : 0.445218, loss_ce: 0.639925
+[17:08:17.781] train iteration 27821 : loss : 0.537882, loss_ce: 0.736029
+[17:08:37.832] train iteration 27871 : loss : 0.539732, loss_ce: 0.671681
+[17:08:57.986] train iteration 27921 : loss : 0.431692, loss_ce: 0.543304
+[17:09:17.994] train iteration 27971 : loss : 0.407170, loss_ce: 0.513497
+[17:09:26.649] val epoch 105 : f1_micro : 0.6756708068507058, f1_macro : 0.557379387319088, tumor_f1 : 0.7324317864009312, stroma_f1 : 0.6466519023690905, infla_f1 : 0.586386284657887, necr_f1 : 0.8703374522072929, other_f1 : 0.41476737751093296, acc_micro : 0.8703374522072929
+[17:09:28.168] train iteration 27985 : loss : 0.718080, loss_ce: 0.892335
+[17:09:48.022] train iteration 28035 : loss : 0.621673, loss_ce: 0.826655
+[17:10:08.053] train iteration 28085 : loss : 0.381065, loss_ce: 0.483251
+[17:10:28.160] train iteration 28135 : loss : 0.461799, loss_ce: 0.632472
+[17:10:48.317] train iteration 28185 : loss : 0.697067, loss_ce: 0.899933
+[17:11:08.381] train iteration 28235 : loss : 0.585214, loss_ce: 0.872443
+[17:11:17.102] val epoch 106 : f1_micro : 0.6531260865075248, f1_macro : 0.5309423782995769, tumor_f1 : 0.7316081012998309, stroma_f1 : 0.5864130486068981, infla_f1 : 0.649774717433112, necr_f1 : 0.8613037041255406, other_f1 : 0.4198367402090558, acc_micro : 0.8613037041255406
+[17:11:18.668] train iteration 28249 : loss : 0.378447, loss_ce: 0.469988
+[17:11:38.390] train iteration 28299 : loss : 0.420827, loss_ce: 0.612831
+[17:11:58.409] train iteration 28349 : loss : 0.678452, loss_ce: 0.957669
+[17:12:18.494] train iteration 28399 : loss : 0.503363, loss_ce: 0.569635
+[17:12:38.698] train iteration 28449 : loss : 0.349683, loss_ce: 0.465519
+[17:12:58.828] train iteration 28499 : loss : 0.547970, loss_ce: 0.819963
+[17:13:07.342] val epoch 107 : f1_micro : 0.671978058559554, f1_macro : 0.5540336721709797, tumor_f1 : 0.7440296092203685, stroma_f1 : 0.6059145706572703, infla_f1 : 0.5958254550184522, necr_f1 : 0.8688226640224457, other_f1 : 0.4085476664560182, acc_micro : 0.8688226640224457
+[17:13:08.884] train iteration 28513 : loss : 0.556624, loss_ce: 0.750309
+[17:13:28.690] train iteration 28563 : loss : 0.360103, loss_ce: 0.501105
+[17:13:48.739] train iteration 28613 : loss : 0.678382, loss_ce: 0.956972
+[17:14:08.888] train iteration 28663 : loss : 0.385809, loss_ce: 0.516339
+[17:14:28.998] train iteration 28713 : loss : 0.519733, loss_ce: 0.690580
+[17:14:49.004] train iteration 28763 : loss : 0.550296, loss_ce: 0.845482
+[17:14:57.728] val epoch 108 : f1_micro : 0.6817276924848557, f1_macro : 0.5570437727229935, tumor_f1 : 0.74104733977999, stroma_f1 : 0.6340776564819472, infla_f1 : 0.6076040289231709, necr_f1 : 0.8727173166615623, other_f1 : 0.4093696032983384, acc_micro : 0.8727173166615623
+[17:14:59.176] train iteration 28777 : loss : 0.466937, loss_ce: 0.589791
+[17:15:19.022] train iteration 28827 : loss : 0.434533, loss_ce: 0.641821
+[17:15:39.054] train iteration 28877 : loss : 0.386965, loss_ce: 0.582013
+[17:15:59.100] train iteration 28927 : loss : 0.468718, loss_ce: 0.650416
+[17:16:19.174] train iteration 28977 : loss : 0.374825, loss_ce: 0.472934
+[17:16:39.430] train iteration 29027 : loss : 0.440373, loss_ce: 0.684725
+[17:16:48.144] val epoch 109 : f1_micro : 0.6610234486205238, f1_macro : 0.5199762252824647, tumor_f1 : 0.7467176445892879, stroma_f1 : 0.5891593332801547, infla_f1 : 0.5968515553644725, necr_f1 : 0.8644367669309888, other_f1 : 0.400275032967329, acc_micro : 0.8644367669309888
+[17:16:49.693] train iteration 29041 : loss : 0.369214, loss_ce: 0.482037
+[17:17:09.459] train iteration 29091 : loss : 0.422156, loss_ce: 0.523455
+[17:17:29.536] train iteration 29141 : loss : 0.426049, loss_ce: 0.627597
+[17:17:49.604] train iteration 29191 : loss : 0.510155, loss_ce: 0.570960
+[17:18:09.710] train iteration 29241 : loss : 0.404656, loss_ce: 0.523809
+[17:18:29.832] train iteration 29291 : loss : 0.527427, loss_ce: 0.638165
+[17:18:38.522] val epoch 110 : f1_micro : 0.6625868529081345, f1_macro : 0.5233268088528088, tumor_f1 : 0.750719183257648, stroma_f1 : 0.5845955120665687, infla_f1 : 0.5682637883084161, necr_f1 : 0.8650784024170467, other_f1 : 0.4051382074664746, acc_micro : 0.8650784024170467
+[17:18:39.993] train iteration 29305 : loss : 0.546499, loss_ce: 0.630810
+[17:18:59.764] train iteration 29355 : loss : 0.436280, loss_ce: 0.615552
+[17:19:19.990] train iteration 29405 : loss : 0.502801, loss_ce: 0.566469
+[17:19:40.110] train iteration 29455 : loss : 0.533594, loss_ce: 0.700361
+[17:20:00.319] train iteration 29505 : loss : 0.522196, loss_ce: 0.765794
+[17:20:20.420] train iteration 29555 : loss : 0.504869, loss_ce: 0.718735
+[17:20:29.175] val epoch 111 : f1_micro : 0.6645459830760956, f1_macro : 0.5088315403887204, tumor_f1 : 0.766820816057069, stroma_f1 : 0.5608798190951347, infla_f1 : 0.6102020293474197, necr_f1 : 0.8658544506345477, other_f1 : 0.41685624910418745, acc_micro : 0.8658544506345477
+[17:20:30.756] train iteration 29569 : loss : 0.431190, loss_ce: 0.574405
+[17:20:50.560] train iteration 29619 : loss : 0.540903, loss_ce: 0.736900
+[17:21:10.808] train iteration 29669 : loss : 0.580347, loss_ce: 0.890892
+[17:21:30.929] train iteration 29719 : loss : 0.564538, loss_ce: 0.736064
+[17:21:50.944] train iteration 29769 : loss : 0.423757, loss_ce: 0.549134
+[17:22:11.110] train iteration 29819 : loss : 0.393037, loss_ce: 0.414998
+[17:22:19.840] val epoch 112 : f1_micro : 0.6889552921056747, f1_macro : 0.573277765086719, tumor_f1 : 0.7529554877962384, stroma_f1 : 0.6368992796966008, infla_f1 : 0.5612002520688942, necr_f1 : 0.8756063750811985, other_f1 : 0.4170824514169778, acc_micro : 0.8756063750811985
+[17:22:21.344] train iteration 29833 : loss : 0.327103, loss_ce: 0.454023
+[17:22:41.109] train iteration 29883 : loss : 0.416759, loss_ce: 0.501074
+[17:23:01.412] train iteration 29933 : loss : 0.314429, loss_ce: 0.339855
+[17:23:21.524] train iteration 29983 : loss : 0.538588, loss_ce: 0.656573
+[17:23:41.517] train iteration 30033 : loss : 0.528413, loss_ce: 0.592607
+[17:24:01.739] train iteration 30083 : loss : 0.333342, loss_ce: 0.534588
+[17:24:10.350] val epoch 113 : f1_micro : 0.6767835063593728, f1_macro : 0.5731189868279866, tumor_f1 : 0.7459487106118884, stroma_f1 : 0.6102729322654861, infla_f1 : 0.6493745712297303, necr_f1 : 0.870754041842052, other_f1 : 0.43462072843353133, acc_micro : 0.870754041842052
+[17:24:11.903] train iteration 30097 : loss : 0.409390, loss_ce: 0.571069
+[17:24:31.705] train iteration 30147 : loss : 0.557424, loss_ce: 0.777705
+[17:24:51.788] train iteration 30197 : loss : 0.363932, loss_ce: 0.421001
+[17:25:11.937] train iteration 30247 : loss : 0.448807, loss_ce: 0.623626
+[17:25:32.038] train iteration 30297 : loss : 0.524639, loss_ce: 0.753040
+[17:25:52.242] train iteration 30347 : loss : 0.390637, loss_ce: 0.556697
+[17:26:00.783] val epoch 114 : f1_micro : 0.694492614695004, f1_macro : 0.5836428041969027, tumor_f1 : 0.7394806146621704, stroma_f1 : 0.6729470981018884, infla_f1 : 0.5511266799377543, necr_f1 : 0.8778263415609088, other_f1 : 0.4215742919061865, acc_micro : 0.8778263415609088
+[17:26:02.286] train iteration 30361 : loss : 0.524519, loss_ce: 0.789155
+[17:26:22.164] train iteration 30411 : loss : 0.418778, loss_ce: 0.655754
+[17:26:42.292] train iteration 30461 : loss : 0.388767, loss_ce: 0.614865
+[17:27:02.491] train iteration 30511 : loss : 0.528679, loss_ce: 0.822806
+[17:27:22.516] train iteration 30561 : loss : 0.431313, loss_ce: 0.548787
+[17:27:42.703] train iteration 30611 : loss : 0.457144, loss_ce: 0.587229
+[17:27:51.381] val epoch 115 : f1_micro : 0.6637195348739624, f1_macro : 0.5380127387387412, tumor_f1 : 0.7478873559406826, stroma_f1 : 0.5878753619534629, infla_f1 : 0.582707690341132, necr_f1 : 0.8655215970107487, other_f1 : 0.41574093060834066, acc_micro : 0.8655215970107487
+[17:27:52.995] train iteration 30625 : loss : 0.460578, loss_ce: 0.472851
+[17:28:12.823] train iteration 30675 : loss : 0.468314, loss_ce: 0.639659
+[17:28:32.944] train iteration 30725 : loss : 0.442083, loss_ce: 0.699590
+[17:28:53.024] train iteration 30775 : loss : 0.404962, loss_ce: 0.643836
+[17:29:13.117] train iteration 30825 : loss : 0.463916, loss_ce: 0.593892
+[17:29:33.334] train iteration 30875 : loss : 0.484210, loss_ce: 0.739410
+[17:29:42.021] val epoch 116 : f1_micro : 0.6712727567979268, f1_macro : 0.5250882602163723, tumor_f1 : 0.7375603786536625, stroma_f1 : 0.6016514225463782, infla_f1 : 0.5814935990742275, necr_f1 : 0.8685557884829385, other_f1 : 0.42858671277229277, acc_micro : 0.8685557884829385
+[17:29:43.544] train iteration 30889 : loss : 0.281559, loss_ce: 0.441569
+[17:30:03.323] train iteration 30939 : loss : 0.502280, loss_ce: 0.657469
+[17:30:23.537] train iteration 30989 : loss : 0.485186, loss_ce: 0.548180
+[17:30:43.596] train iteration 31039 : loss : 0.375412, loss_ce: 0.488737
+[17:31:03.835] train iteration 31089 : loss : 0.522536, loss_ce: 0.604971
+[17:31:23.805] train iteration 31139 : loss : 0.438239, loss_ce: 0.516763
+[17:31:32.590] val epoch 117 : f1_micro : 0.6800004861184529, f1_macro : 0.5641620606184006, tumor_f1 : 0.7488470354250499, stroma_f1 : 0.6356916140232768, infla_f1 : 0.6223588311778647, necr_f1 : 0.8720211429255349, other_f1 : 0.41594609658100773, acc_micro : 0.8720211429255349
+[17:31:34.156] train iteration 31153 : loss : 0.562967, loss_ce: 0.602850
+[17:31:53.960] train iteration 31203 : loss : 0.418024, loss_ce: 0.475527
+[17:32:13.971] train iteration 31253 : loss : 0.386364, loss_ce: 0.426531
+[17:32:34.239] train iteration 31303 : loss : 0.587892, loss_ce: 0.808749
+[17:32:54.307] train iteration 31353 : loss : 0.481958, loss_ce: 0.664251
+[17:33:14.395] train iteration 31403 : loss : 0.431580, loss_ce: 0.593632
+[17:33:23.104] val epoch 118 : f1_micro : 0.6731126329728535, f1_macro : 0.5163858234882355, tumor_f1 : 0.731533774307796, stroma_f1 : 0.621925909604345, infla_f1 : 0.5559038839169911, necr_f1 : 0.8693048272814069, other_f1 : 0.39230806699820925, acc_micro : 0.8693048272814069
+[17:33:24.611] train iteration 31417 : loss : 0.383522, loss_ce: 0.566869
+[17:33:44.384] train iteration 31467 : loss : 0.522998, loss_ce: 0.694703
+[17:34:04.530] train iteration 31517 : loss : 0.442811, loss_ce: 0.549631
+[17:34:24.636] train iteration 31567 : loss : 0.414353, loss_ce: 0.550830
+[17:34:44.914] train iteration 31617 : loss : 0.526547, loss_ce: 0.689268
+[17:35:04.930] train iteration 31667 : loss : 0.538609, loss_ce: 0.772365
+[17:35:13.566] val epoch 119 : f1_micro : 0.679655658347266, f1_macro : 0.5471733797873769, tumor_f1 : 0.748517034309251, stroma_f1 : 0.6055940815380642, infla_f1 : 0.6052163732903344, necr_f1 : 0.871932830129351, other_f1 : 0.41954334333006826, acc_micro : 0.871932830129351
+[17:35:15.015] train iteration 31681 : loss : 0.452818, loss_ce: 0.711871
+[17:35:34.839] train iteration 31731 : loss : 0.551280, loss_ce: 0.727600
+[17:35:54.930] train iteration 31781 : loss : 0.651006, loss_ce: 0.891831
+[17:36:15.055] train iteration 31831 : loss : 0.610771, loss_ce: 0.691394
+[17:36:35.332] train iteration 31881 : loss : 0.468499, loss_ce: 0.594630
+[17:36:55.384] train iteration 31931 : loss : 0.690703, loss_ce: 1.057007
+[17:37:04.033] val epoch 120 : f1_micro : 0.6318659867559161, f1_macro : 0.504939286836556, tumor_f1 : 0.7439512184688023, stroma_f1 : 0.5358132898275342, infla_f1 : 0.5817206752087388, necr_f1 : 0.8527878906045642, other_f1 : 0.406887836687799, acc_micro : 0.8527878906045642
+[17:37:05.518] train iteration 31945 : loss : 0.612700, loss_ce: 0.754663
+[17:37:25.271] train iteration 31995 : loss : 0.403662, loss_ce: 0.579481
+[17:37:45.350] train iteration 32045 : loss : 0.271784, loss_ce: 0.367738
+[17:38:05.661] train iteration 32095 : loss : 0.495708, loss_ce: 0.632968
+[17:38:25.696] train iteration 32145 : loss : 0.644937, loss_ce: 1.006424
+[17:38:45.941] train iteration 32195 : loss : 0.438210, loss_ce: 0.512400
+[17:38:54.534] val epoch 121 : f1_micro : 0.6591761090925762, f1_macro : 0.5474791963185582, tumor_f1 : 0.738933380161013, stroma_f1 : 0.5942606564079013, infla_f1 : 0.5980033235890525, necr_f1 : 0.8637008113520486, other_f1 : 0.41445366718939375, acc_micro : 0.8637008113520486
+[17:38:56.046] train iteration 32209 : loss : 0.429792, loss_ce: 0.656575
+[17:39:15.821] train iteration 32259 : loss : 0.638036, loss_ce: 0.832275
+[17:39:35.940] train iteration 32309 : loss : 0.316661, loss_ce: 0.428029
+[17:39:56.032] train iteration 32359 : loss : 0.454776, loss_ce: 0.669885
+[17:40:16.077] train iteration 32409 : loss : 0.394420, loss_ce: 0.465121
+[17:40:36.158] train iteration 32459 : loss : 0.270021, loss_ce: 0.365729
+[17:40:44.878] val epoch 122 : f1_micro : 0.6595566698483059, f1_macro : 0.5208441019058228, tumor_f1 : 0.7440777591296605, stroma_f1 : 0.5740423032215664, infla_f1 : 0.5952923276594707, necr_f1 : 0.863854455096381, other_f1 : 0.4232959613104218, acc_micro : 0.863854455096381
+[17:40:46.421] train iteration 32473 : loss : 0.484920, loss_ce: 0.726017
+[17:41:06.235] train iteration 32523 : loss : 0.414961, loss_ce: 0.570743
+[17:41:26.273] train iteration 32573 : loss : 0.428236, loss_ce: 0.468376
+[17:41:46.332] train iteration 32623 : loss : 0.351071, loss_ce: 0.482355
+[17:42:06.498] train iteration 32673 : loss : 0.574263, loss_ce: 0.843993
+[17:42:26.542] train iteration 32723 : loss : 0.576647, loss_ce: 0.675711
+[17:42:35.176] val epoch 123 : f1_micro : 0.6392130383423397, f1_macro : 0.4921121139611517, tumor_f1 : 0.7299302582229886, stroma_f1 : 0.5432817910810367, infla_f1 : 0.5604146804128375, necr_f1 : 0.8557515953268323, other_f1 : 0.41477958761554745, acc_micro : 0.8557515953268323
+[17:42:36.735] train iteration 32737 : loss : 0.496537, loss_ce: 0.704345
+[17:42:56.536] train iteration 32787 : loss : 0.643399, loss_ce: 0.865132
+[17:43:16.649] train iteration 32837 : loss : 0.445731, loss_ce: 0.598898
+[17:43:36.836] train iteration 32887 : loss : 0.452255, loss_ce: 0.665768
+[17:43:56.800] train iteration 32937 : loss : 0.543080, loss_ce: 0.668535
+[17:44:17.013] train iteration 32987 : loss : 0.331947, loss_ce: 0.346012
+[17:44:25.539] val epoch 124 : f1_micro : 0.6652561128139496, f1_macro : 0.5215377137064934, tumor_f1 : 0.7468919243131366, stroma_f1 : 0.5798730070569685, infla_f1 : 0.604246009673391, necr_f1 : 0.8661383475576129, other_f1 : 0.4095674882742709, acc_micro : 0.8661383475576129
+[17:44:27.093] train iteration 33001 : loss : 0.587753, loss_ce: 0.702700
+[17:44:46.860] train iteration 33051 : loss : 0.545826, loss_ce: 0.792719
+[17:45:07.052] train iteration 33101 : loss : 0.358034, loss_ce: 0.420414
+[17:45:27.075] train iteration 33151 : loss : 0.469695, loss_ce: 0.555435
+[17:45:47.128] train iteration 33201 : loss : 0.626906, loss_ce: 0.814006
+[17:46:07.335] train iteration 33251 : loss : 0.614177, loss_ce: 0.920139
+[17:46:16.158] val epoch 125 : f1_micro : 0.6788532116583416, f1_macro : 0.5367181173392704, tumor_f1 : 0.7546102489743914, stroma_f1 : 0.6102052506591592, infla_f1 : 0.6387271987540382, necr_f1 : 0.8715665595872062, other_f1 : 0.3999018945864269, acc_micro : 0.8715665595872062
+[17:46:17.743] train iteration 33265 : loss : 0.566348, loss_ce: 0.765795
+[17:46:37.447] train iteration 33315 : loss : 0.498089, loss_ce: 0.626062
+[17:46:57.530] train iteration 33365 : loss : 0.629406, loss_ce: 0.864179
+[17:47:17.604] train iteration 33415 : loss : 0.432951, loss_ce: 0.574981
+[17:47:37.681] train iteration 33465 : loss : 0.432827, loss_ce: 0.469831
+[17:47:57.948] train iteration 33515 : loss : 0.519833, loss_ce: 0.729692
+[17:48:06.586] val epoch 126 : f1_micro : 0.6469952144793102, f1_macro : 0.5274131111800671, tumor_f1 : 0.7490358097212655, stroma_f1 : 0.5566277461392539, infla_f1 : 0.594852260180882, necr_f1 : 0.8588245851652963, other_f1 : 0.4182757319150759, acc_micro : 0.8588245851652963
+[17:48:07.959] train iteration 33529 : loss : 0.512659, loss_ce: 0.737571
+[17:48:27.675] train iteration 33579 : loss : 0.435706, loss_ce: 0.469797
+[17:48:47.719] train iteration 33629 : loss : 0.444490, loss_ce: 0.671755
+[17:49:08.012] train iteration 33679 : loss : 0.435582, loss_ce: 0.593760
+[17:49:27.989] train iteration 33729 : loss : 0.377386, loss_ce: 0.575643
+[17:49:48.182] train iteration 33779 : loss : 0.454285, loss_ce: 0.612207
+[17:49:56.854] val epoch 127 : f1_micro : 0.6613835373095104, f1_macro : 0.5669226135526385, tumor_f1 : 0.7422002553939819, stroma_f1 : 0.5896834055227893, infla_f1 : 0.6214318041290555, necr_f1 : 0.8645764291286469, other_f1 : 0.419431120905626, acc_micro : 0.8645764291286469
+[17:49:58.378] train iteration 33793 : loss : 0.367235, loss_ce: 0.497802
+[17:50:18.108] train iteration 33843 : loss : 0.320602, loss_ce: 0.408450
+[17:50:38.107] train iteration 33893 : loss : 0.461188, loss_ce: 0.623563
+[17:50:58.419] train iteration 33943 : loss : 0.445903, loss_ce: 0.625007
+[17:51:18.443] train iteration 33993 : loss : 0.316075, loss_ce: 0.328526
+[17:51:38.546] train iteration 34043 : loss : 0.503093, loss_ce: 0.645977
+[17:51:47.430] val epoch 128 : f1_micro : 0.6645840214831489, f1_macro : 0.5308400733130318, tumor_f1 : 0.7425210454634258, stroma_f1 : 0.5935513507574797, infla_f1 : 0.6182395198515483, necr_f1 : 0.8658705694334847, other_f1 : 0.4357840096844094, acc_micro : 0.8658705694334847
+[17:51:48.920] train iteration 34057 : loss : 0.302081, loss_ce: 0.426072
+[17:52:08.633] train iteration 34107 : loss : 0.346987, loss_ce: 0.407224
+[17:52:28.749] train iteration 34157 : loss : 0.470526, loss_ce: 0.581277
+[17:52:48.905] train iteration 34207 : loss : 0.453623, loss_ce: 0.528694
+[17:53:09.014] train iteration 34257 : loss : 0.503175, loss_ce: 0.704247
+[17:53:29.129] train iteration 34307 : loss : 0.404578, loss_ce: 0.536432
+[17:53:37.759] val epoch 129 : f1_micro : 0.667812819991793, f1_macro : 0.5264690294861794, tumor_f1 : 0.7568768028702054, stroma_f1 : 0.5888924919334906, infla_f1 : 0.5399948471957552, necr_f1 : 0.8671952060290745, other_f1 : 0.4715911437358175, acc_micro : 0.8671952060290745
+[17:53:39.290] train iteration 34321 : loss : 0.584502, loss_ce: 0.804349
+[17:53:59.176] train iteration 34371 : loss : 0.432269, loss_ce: 0.584330
+[17:54:19.114] train iteration 34421 : loss : 0.274870, loss_ce: 0.373871
+[17:54:39.330] train iteration 34471 : loss : 0.484277, loss_ce: 0.553647
+[17:54:59.475] train iteration 34521 : loss : 0.465672, loss_ce: 0.675482
+[17:55:19.526] train iteration 34571 : loss : 0.495237, loss_ce: 0.575796
+[17:55:28.389] val epoch 130 : f1_micro : 0.6372842809983662, f1_macro : 0.5313342745815005, tumor_f1 : 0.723985031247139, stroma_f1 : 0.5591450301664216, infla_f1 : 0.5800235441752842, necr_f1 : 0.8549529441765377, other_f1 : 0.40453440762524095, acc_micro : 0.8549529441765377
+[17:55:29.896] train iteration 34585 : loss : 0.305114, loss_ce: 0.347046
+[17:55:49.660] train iteration 34635 : loss : 0.416088, loss_ce: 0.575044
+[17:56:09.846] train iteration 34685 : loss : 0.406940, loss_ce: 0.556133
+[17:56:29.889] train iteration 34735 : loss : 0.342281, loss_ce: 0.390230
+[17:56:50.004] train iteration 34785 : loss : 0.549407, loss_ce: 0.663686
+[17:57:10.222] train iteration 34835 : loss : 0.486905, loss_ce: 0.699207
+[17:57:18.801] val epoch 131 : f1_micro : 0.6665749336991992, f1_macro : 0.5197963735886982, tumor_f1 : 0.7597913444042206, stroma_f1 : 0.5686548882191086, infla_f1 : 0.5982897026198251, necr_f1 : 0.8666649375643048, other_f1 : 0.4048564519201006, acc_micro : 0.8666649375643048
+[17:57:20.203] train iteration 34849 : loss : 0.565862, loss_ce: 0.664297
+[17:57:39.980] train iteration 34899 : loss : 0.500560, loss_ce: 0.537485
+[17:58:00.146] train iteration 34949 : loss : 0.355389, loss_ce: 0.433809
+[17:58:20.238] train iteration 34999 : loss : 0.452688, loss_ce: 0.563982
+[17:58:40.448] train iteration 35049 : loss : 0.492077, loss_ce: 0.538641
+[17:59:00.614] train iteration 35099 : loss : 0.477595, loss_ce: 0.687594
+[17:59:09.319] val epoch 132 : f1_micro : 0.659809444631849, f1_macro : 0.5269824543169567, tumor_f1 : 0.7623733750411442, stroma_f1 : 0.5541250844086919, infla_f1 : 0.6811521095888955, necr_f1 : 0.8639686618532453, other_f1 : 0.4163258858025074, acc_micro : 0.8639686618532453
+[17:59:10.838] train iteration 35113 : loss : 0.568382, loss_ce: 0.873220
+[17:59:30.638] train iteration 35163 : loss : 0.370030, loss_ce: 0.585565
+[17:59:50.841] train iteration 35213 : loss : 0.720908, loss_ce: 1.122335
+[18:00:10.939] train iteration 35263 : loss : 0.407941, loss_ce: 0.590892
+[18:00:31.177] train iteration 35313 : loss : 0.593355, loss_ce: 0.672558
+[18:00:51.200] train iteration 35363 : loss : 0.404705, loss_ce: 0.489394
+[18:00:59.856] val epoch 133 : f1_micro : 0.6683003902435303, f1_macro : 0.5237585199730737, tumor_f1 : 0.7483766760144915, stroma_f1 : 0.5981029958597252, infla_f1 : 0.5889207550457546, necr_f1 : 0.867357884134565, other_f1 : 0.4198112631482737, acc_micro : 0.867357884134565
+[18:01:01.343] train iteration 35377 : loss : 0.300534, loss_ce: 0.454420
+[18:01:21.130] train iteration 35427 : loss : 0.410653, loss_ce: 0.520249
+[18:01:41.252] train iteration 35477 : loss : 0.423770, loss_ce: 0.569785
+[18:02:01.419] train iteration 35527 : loss : 0.487592, loss_ce: 0.690555
+[18:02:21.592] train iteration 35577 : loss : 0.607965, loss_ce: 0.795515
+[18:02:41.713] train iteration 35627 : loss : 0.412509, loss_ce: 0.613895
+[18:02:50.443] val epoch 134 : f1_micro : 0.6722333878278732, f1_macro : 0.5250799890075412, tumor_f1 : 0.7523252410548074, stroma_f1 : 0.5914444464391896, infla_f1 : 0.5590702380452838, necr_f1 : 0.8689435124397278, other_f1 : 0.41497839035998496, acc_micro : 0.8689435124397278
+[18:02:51.868] train iteration 35641 : loss : 0.719273, loss_ce: 1.024603
+[18:03:11.616] train iteration 35691 : loss : 0.384499, loss_ce: 0.497293
+[18:03:31.772] train iteration 35741 : loss : 0.417165, loss_ce: 0.552060
+[18:03:52.009] train iteration 35791 : loss : 0.412728, loss_ce: 0.577949
+[18:04:12.097] train iteration 35841 : loss : 0.310977, loss_ce: 0.407018
+[18:04:32.366] train iteration 35891 : loss : 0.568070, loss_ce: 0.781719
+[18:04:41.029] val epoch 135 : f1_micro : 0.655330953853471, f1_macro : 0.5425422957965306, tumor_f1 : 0.7512540795973369, stroma_f1 : 0.5582887870592198, infla_f1 : 0.6500655987433025, necr_f1 : 0.8621607337679181, other_f1 : 0.4201130505119051, acc_micro : 0.8621607337679181
+[18:04:42.542] train iteration 35905 : loss : 0.617407, loss_ce: 0.849340
+[18:05:02.255] train iteration 35955 : loss : 0.534714, loss_ce: 0.735667
+[18:05:22.491] train iteration 36005 : loss : 0.407149, loss_ce: 0.603087
+[18:05:42.591] train iteration 36055 : loss : 0.241629, loss_ce: 0.365164
+[18:06:02.716] train iteration 36105 : loss : 0.522950, loss_ce: 0.694288
+[18:06:22.885] train iteration 36155 : loss : 0.247129, loss_ce: 0.337577
+[18:06:31.504] val epoch 136 : f1_micro : 0.6570043585130146, f1_macro : 0.5091927019613129, tumor_f1 : 0.7442974043743951, stroma_f1 : 0.5654739673648562, infla_f1 : 0.6020287445613316, necr_f1 : 0.8628340363502502, other_f1 : 0.4234662420515503, acc_micro : 0.8628340363502502
+[18:06:32.966] train iteration 36169 : loss : 0.441561, loss_ce: 0.550878
+[18:06:52.850] train iteration 36219 : loss : 0.340802, loss_ce: 0.451279
+[18:07:12.884] train iteration 36269 : loss : 0.541848, loss_ce: 0.785046
+[18:07:33.042] train iteration 36319 : loss : 0.316887, loss_ce: 0.415931
+[18:07:53.105] train iteration 36369 : loss : 0.469914, loss_ce: 0.561814
+[18:08:13.248] train iteration 36419 : loss : 0.456146, loss_ce: 0.628961
+[18:08:21.793] val epoch 137 : f1_micro : 0.6669532379933766, f1_macro : 0.5481118453400475, tumor_f1 : 0.7562974946839469, stroma_f1 : 0.5908038658755166, infla_f1 : 0.6195110295500074, necr_f1 : 0.8668238137449537, other_f1 : 0.4225176298724754, acc_micro : 0.8668238137449537
+[18:08:23.258] train iteration 36433 : loss : 0.486313, loss_ce: 0.605450
+[18:08:43.101] train iteration 36483 : loss : 0.394018, loss_ce: 0.433189
+[18:09:03.226] train iteration 36533 : loss : 0.346972, loss_ce: 0.467312
+[18:09:23.274] train iteration 36583 : loss : 0.437615, loss_ce: 0.639574
+[18:09:43.465] train iteration 36633 : loss : 0.409376, loss_ce: 0.518867
+[18:10:03.521] train iteration 36683 : loss : 0.545946, loss_ce: 0.653409
+[18:10:12.204] val epoch 138 : f1_micro : 0.6752365444387708, f1_macro : 0.5361374542117119, tumor_f1 : 0.7436365400041852, stroma_f1 : 0.608352464224611, infla_f1 : 0.5686409888522965, necr_f1 : 0.8701186094965253, other_f1 : 0.41732484402434367, acc_micro : 0.8701186094965253
+[18:10:13.735] train iteration 36697 : loss : 0.352951, loss_ce: 0.504720
+[18:10:33.524] train iteration 36747 : loss : 0.467738, loss_ce: 0.686247
+[18:10:53.722] train iteration 36797 : loss : 0.441568, loss_ce: 0.563835
+[18:11:13.729] train iteration 36847 : loss : 0.489368, loss_ce: 0.605421
+[18:11:33.839] train iteration 36897 : loss : 0.471484, loss_ce: 0.680301
+[18:11:54.125] train iteration 36947 : loss : 0.319627, loss_ce: 0.500194
+[18:12:02.797] val epoch 139 : f1_micro : 0.6773953139781952, f1_macro : 0.5144334946359906, tumor_f1 : 0.755510002374649, stroma_f1 : 0.6029596499034336, infla_f1 : 0.577056537781443, necr_f1 : 0.8709909958498818, other_f1 : 0.4156871522178075, acc_micro : 0.8709909958498818
+[18:12:04.294] train iteration 36961 : loss : 0.441834, loss_ce: 0.561603
+[18:12:24.043] train iteration 37011 : loss : 0.555080, loss_ce: 0.584250
+[18:12:44.079] train iteration 37061 : loss : 0.526307, loss_ce: 0.760094
+[18:13:04.379] train iteration 37111 : loss : 0.367382, loss_ce: 0.458525
+[18:13:24.388] train iteration 37161 : loss : 0.421939, loss_ce: 0.622809
+[18:13:44.521] train iteration 37211 : loss : 0.461810, loss_ce: 0.567344
+[18:13:53.085] val epoch 140 : f1_micro : 0.6610522759812218, f1_macro : 0.5163309510265078, tumor_f1 : 0.7577696698052543, stroma_f1 : 0.5712365891252246, infla_f1 : 0.5712547387395587, necr_f1 : 0.8644606045314244, other_f1 : 0.4204668467905971, acc_micro : 0.8644606045314244
+[18:13:54.604] train iteration 37225 : loss : 0.428233, loss_ce: 0.312446
+[18:14:14.357] train iteration 37275 : loss : 0.430175, loss_ce: 0.457157
+[18:14:34.468] train iteration 37325 : loss : 0.327279, loss_ce: 0.383984
+[18:14:54.725] train iteration 37375 : loss : 0.614276, loss_ce: 0.966431
+[18:15:14.735] train iteration 37425 : loss : 0.309401, loss_ce: 0.467993
+[18:15:34.719] train iteration 37475 : loss : 0.374867, loss_ce: 0.532655
+[18:15:43.501] val epoch 141 : f1_micro : 0.6648063489368984, f1_macro : 0.5102106641445842, tumor_f1 : 0.7609554039580482, stroma_f1 : 0.574942661183221, infla_f1 : 0.5656356151614871, necr_f1 : 0.8659555273396629, other_f1 : 0.43251272290945053, acc_micro : 0.8659555273396629
+[18:15:44.940] train iteration 37489 : loss : 0.301774, loss_ce: 0.298942
+[18:16:04.703] train iteration 37539 : loss : 0.351322, loss_ce: 0.513224
+[18:16:24.885] train iteration 37589 : loss : 0.507827, loss_ce: 0.680211
+[18:16:44.872] train iteration 37639 : loss : 0.425363, loss_ce: 0.524918
+[18:17:04.955] train iteration 37689 : loss : 0.436793, loss_ce: 0.644629
+[18:17:25.063] train iteration 37739 : loss : 0.447353, loss_ce: 0.618304
+[18:17:33.668] val epoch 142 : f1_micro : 0.6655876359769276, f1_macro : 0.5143453734261649, tumor_f1 : 0.7489544451236725, stroma_f1 : 0.5732408761978149, infla_f1 : 0.6029912573950631, necr_f1 : 0.8662761492388589, other_f1 : 0.4146469256291831, acc_micro : 0.8662761492388589
+[18:17:35.107] train iteration 37753 : loss : 0.453415, loss_ce: 0.533960
+[18:17:54.920] train iteration 37803 : loss : 0.453795, loss_ce: 0.525486
+[18:18:14.882] train iteration 37853 : loss : 0.428195, loss_ce: 0.629095
+[18:18:35.066] train iteration 37903 : loss : 0.445106, loss_ce: 0.583715
+[18:18:55.135] train iteration 37953 : loss : 0.521344, loss_ce: 0.703592
+[18:19:15.294] train iteration 38003 : loss : 0.383959, loss_ce: 0.465699
+[18:19:23.921] val epoch 143 : f1_micro : 0.6743028483220509, f1_macro : 0.5270630174449512, tumor_f1 : 0.7556389783109937, stroma_f1 : 0.5884938985109329, infla_f1 : 0.5835076464073998, necr_f1 : 0.8697521729128701, other_f1 : 0.4207033309960804, acc_micro : 0.8697521729128701
+[18:19:25.429] train iteration 38017 : loss : 0.644081, loss_ce: 0.931851
+[18:19:45.222] train iteration 38067 : loss : 0.495497, loss_ce: 0.717647
+[18:20:05.242] train iteration 38117 : loss : 0.524649, loss_ce: 0.707957
+[18:20:25.368] train iteration 38167 : loss : 0.405222, loss_ce: 0.426679
+[18:20:45.538] train iteration 38217 : loss : 0.384362, loss_ce: 0.621433
+[18:21:05.563] train iteration 38267 : loss : 0.552633, loss_ce: 0.797151
+[18:21:14.298] val epoch 144 : f1_micro : 0.6770247433866773, f1_macro : 0.569610772388322, tumor_f1 : 0.7578274394784655, stroma_f1 : 0.598367468853082, infla_f1 : 0.6514266346182142, necr_f1 : 0.8708368710109166, other_f1 : 0.42537409466292175, acc_micro : 0.8708368710109166
+[18:21:15.843] train iteration 38281 : loss : 0.427234, loss_ce: 0.537021
+[18:21:35.701] train iteration 38331 : loss : 0.513161, loss_ce: 0.754490
+[18:21:55.698] train iteration 38381 : loss : 0.522982, loss_ce: 0.752586
+[18:22:15.835] train iteration 38431 : loss : 0.491933, loss_ce: 0.572899
+[18:22:35.986] train iteration 38481 : loss : 0.547782, loss_ce: 0.830111
+[18:22:56.056] train iteration 38531 : loss : 0.278938, loss_ce: 0.400675
+[18:23:04.856] val epoch 145 : f1_micro : 0.674552566238812, f1_macro : 0.5222955899579185, tumor_f1 : 0.7586154001099723, stroma_f1 : 0.5998734902324421, infla_f1 : 0.5648988474692617, necr_f1 : 0.869860942874636, other_f1 : 0.41871505683021887, acc_micro : 0.869860942874636
+[18:23:06.333] train iteration 38545 : loss : 0.363077, loss_ce: 0.432868
+[18:23:26.154] train iteration 38595 : loss : 0.346371, loss_ce: 0.496127
+[18:23:46.231] train iteration 38645 : loss : 0.373637, loss_ce: 0.488296
+[18:24:06.386] train iteration 38695 : loss : 0.414854, loss_ce: 0.518297
+[18:24:26.473] train iteration 38745 : loss : 0.409733, loss_ce: 0.483819
+[18:24:46.659] train iteration 38795 : loss : 0.437319, loss_ce: 0.493442
+[18:24:55.399] val epoch 146 : f1_micro : 0.6732426562479564, f1_macro : 0.5259083786181041, tumor_f1 : 0.761153370141983, stroma_f1 : 0.5905013987794518, infla_f1 : 0.590662460241999, necr_f1 : 0.8693293929100037, other_f1 : 0.4234200107332851, acc_micro : 0.8693293929100037
+[18:24:57.004] train iteration 38809 : loss : 0.376879, loss_ce: 0.444933
+[18:25:16.810] train iteration 38859 : loss : 0.442023, loss_ce: 0.560562
+[18:25:36.973] train iteration 38909 : loss : 0.476482, loss_ce: 0.633611
+[18:25:57.038] train iteration 38959 : loss : 0.278560, loss_ce: 0.278205
+[18:26:17.253] train iteration 39009 : loss : 0.373483, loss_ce: 0.489741
+[18:26:37.410] train iteration 39059 : loss : 0.461768, loss_ce: 0.571642
+[18:26:46.023] val epoch 147 : f1_micro : 0.6695657329899924, f1_macro : 0.5075326051030841, tumor_f1 : 0.7576758393219539, stroma_f1 : 0.5884627178643963, infla_f1 : 0.5810130664280483, necr_f1 : 0.8678615135805947, other_f1 : 0.42082117178610395, acc_micro : 0.8678615135805947
+[18:26:47.461] train iteration 39073 : loss : 0.581026, loss_ce: 0.653968
+[18:27:07.377] train iteration 39123 : loss : 0.489088, loss_ce: 0.686555
+[18:27:27.456] train iteration 39173 : loss : 0.589769, loss_ce: 0.906750
+[18:27:47.510] train iteration 39223 : loss : 0.356143, loss_ce: 0.532682
+[18:28:07.723] train iteration 39273 : loss : 0.547032, loss_ce: 0.649741
+[18:28:27.831] train iteration 39323 : loss : 0.383112, loss_ce: 0.406644
+[18:28:36.578] val epoch 148 : f1_micro : 0.6718439097915377, f1_macro : 0.52151030089174, tumor_f1 : 0.7577542045286724, stroma_f1 : 0.5930876875229713, infla_f1 : 0.5726392205272403, necr_f1 : 0.8687729452337537, other_f1 : 0.41768219934809686, acc_micro : 0.8687729452337537
+[18:28:38.036] train iteration 39337 : loss : 0.393779, loss_ce: 0.525702
+[18:28:57.779] train iteration 39387 : loss : 0.292665, loss_ce: 0.423101
+[18:29:17.891] train iteration 39437 : loss : 0.335067, loss_ce: 0.328631
+[18:29:38.045] train iteration 39487 : loss : 0.464127, loss_ce: 0.641470
+[18:29:58.167] train iteration 39537 : loss : 0.401852, loss_ce: 0.533064
+[18:30:18.275] train iteration 39587 : loss : 0.373043, loss_ce: 0.497379
+[18:30:26.986] val epoch 149 : f1_micro : 0.6712364426680973, f1_macro : 0.5080759738172803, tumor_f1 : 0.7536135017871857, stroma_f1 : 0.5955293849443218, infla_f1 : 0.577057346701622, necr_f1 : 0.868531950882503, other_f1 : 0.4188315279731926, acc_micro : 0.868531950882503
+[18:30:27.732] save model to ./logs/frac_1.0/fold_3/epoch_149.pth
+[18:30:28.604] save model to ./logs/frac_1.0/fold_3/epoch_149.pth

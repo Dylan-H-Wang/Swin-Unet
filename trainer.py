@@ -108,7 +108,7 @@ def trainer_bcss(args, model, snapshot_path):
     num_classes = args.num_classes
     batch_size = args.batch_size * args.n_gpu
     # max_iterations = args.max_iterations
-    db_train = Bcss_dataset(data_path=args.root_path, frac=args.frac,
+    db_train = Bcss_dataset(data_path=args.root_path,
                                transforms=albu.Compose(
                                    [
                                     albu.CenterCrop(args.img_size, args.img_size, True),
@@ -125,7 +125,7 @@ def trainer_bcss(args, model, snapshot_path):
                                         max_pixel_value=255.0,
                                         always_apply=True,
                                     ),
-                                    ToTensorV2(transpose_mask=True),]))
+                                    ToTensorV2(transpose_mask=True),]), frac=args.frac, fold=args.fold)
     print("The length of train set is: {}".format(len(db_train)))
 
     db_val = Bcss_dataset_val(data_path=args.root_path,
@@ -138,7 +138,7 @@ def trainer_bcss(args, model, snapshot_path):
                                         max_pixel_value=255.0,
                                         always_apply=True,
                                     ),
-                                    ToTensorV2(transpose_mask=True),]))
+                                    ToTensorV2(transpose_mask=True),]), fold=args.fold)
     print("The length of val set is: {}".format(len(db_val)))
 
     def worker_init_fn(worker_id):
